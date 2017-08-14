@@ -1,0 +1,19 @@
+{
+    "name": "joekolade/mein-pflegeberuf-template",
+    "type": "typo3-cms-extension",
+    "description": "Template \"Mein Pflegeberuf\"",
+    "authors": [
+        {
+            "name": "Joe Sch\u00e4fer",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^8.7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Joekolade\\Meinpflegeberuf\\": "Classes"
+        }
+    }
+}

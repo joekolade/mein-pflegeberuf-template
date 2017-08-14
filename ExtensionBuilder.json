@@ -1,0 +1,39 @@
+{
+    "modules": [],
+    "properties": {
+        "backendModules": [],
+        "description": "Template \"Mein Pflegeberuf\"",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "typo3 => 8.7.0-8.7.99\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "skipGenerateDocumentationTemplate": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "8.7.0-8.7.99",
+            "version": "1.0.0"
+        },
+        "extensionKey": "meinpflegeberuf",
+        "name": "Mein Pflegeberuf Template",
+        "originalExtensionKey": "",
+        "originalVendorName": "",
+        "persons": [
+            {
+                "company": "Sch\u00e4fer \u2013 B\u00fcro f\u00fcr Webentwicklung",
+                "email": "mail@schaefer-webentwicklung.de",
+                "name": "Joe Sch\u00e4fer",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [],
+        "vendorName": "Joekolade"
+    },
+    "wires": [],
+    "log": {
+        "last_modified": "2017-08-14 02:16",
+        "extension_builder_version": "8.7.0",
+        "be_user": " (1)"
+    }
+}
