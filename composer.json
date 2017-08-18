@@ -10,6 +10,7 @@
     ],
     "require": {
         "typo3/cms": "^8.7",
+        "typo3/cms-core": "*",
         "mask/mask": "^3.0",
         "dmitryd/typo3-realurl": "^2.2",
         "lochmueller/perfectlightbox": "dev-master",
