@@ -10,7 +10,7 @@
     ],
     "require": {
         "typo3/cms-core": "^8.7.1",
-        "gridelementsteam/gridelements" : "dev-master",
+        "gridelementsteam/gridelements" : "^8.0",
         "laxap/bootstrap-grids": "dev-master",
         "mask/mask": "^3.0",
         "in2code/powermail": "^3.0",
