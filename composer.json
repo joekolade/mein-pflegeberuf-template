@@ -13,7 +13,7 @@
         "gridelementsteam/gridelements" : "dev-master",
         "mask/mask": "^3.0",
         "dmitryd/typo3-realurl": "^2.2",
-        "jonathanheilmann/jh_magnificpopup": "dev-master",
+        "lochmueller/perfectlightbox": "dev-master",
         "t3monitor/t3monitoring_client": "^1.0",
         "clickstorm/cs_seo": "^2.0",
         "lochmueller/sourceopt": "^1.0",
