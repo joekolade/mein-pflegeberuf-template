@@ -14,11 +14,14 @@
         "mask/mask": "^3.0",
         "dmitryd/typo3-realurl": "^2.2",
         "lochmueller/perfectlightbox": "dev-master",
-        "t3monitor/t3monitoring_client": "^1.0",
-        "clickstorm/cs_seo": "^2.0",
+        "t3monitor/t3monitoring_client": "dev-master",
+        "clickstorm/cs_seo": "^2.1",
+        "clickstorm/go_maps_ext": "^2.2",
         "lochmueller/sourceopt": "^1.0",
         "sgalinski/scriptmerger": "^5.0",
-        "schnitzler/fluid-styled-responsive-images": "^8.7.0"
+        "schnitzler/fluid-styled-responsive-images": "^8.7.0",
+        "instituteweb/unroll": "^2.0",
+        "friendsoftypo3/frontend-editing": "^1.1"
     },
     "autoload": {
         "psr-4": {
