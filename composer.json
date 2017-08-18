@@ -13,7 +13,7 @@
         "typo3/cms-core": "~8.7.0",
         "mask/mask": "^3.0",
         "dmitryd/typo3-realurl": "^2.2",
-        "t3monitor/t3monitoring_client": "dev-master",
+        "t3monitor/t3monitoring_client": "^1.0",
         "clickstorm/cs_seo": "^2.1",
         "lochmueller/sourceopt": "^1.0",
         "sgalinski/scriptmerger": "^5.0",
