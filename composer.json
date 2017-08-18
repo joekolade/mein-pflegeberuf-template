@@ -9,7 +9,7 @@
         }
     ],
     "require": {
-        "typo3/cms-core": "^8.7.1",
+        "typo3/cms-core": "^8.7",
         "gridelementsteam/gridelements" : "dev-master",
         "mask/mask": "^3.0",
         "dmitryd/typo3-realurl": "^2.2",
