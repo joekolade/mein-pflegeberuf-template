@@ -18,6 +18,7 @@
         "clickstorm/cs_seo": "^2.0",
         "lochmueller/sourceopt": "^1.0",
         "sgalinski/scriptmerger": "^5.0",
+        "schnitzler/fluid-styled-responsive-images": "^8.7.0",
         //"laxap/bootstrap-grids": "dev-master",
         //"in2code/powermail": "^3.0",
     },
