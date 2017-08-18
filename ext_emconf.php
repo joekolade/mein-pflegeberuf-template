@@ -11,7 +11,7 @@
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Mein Pflegeberuf Template',
     'description' => 'Template \"Mein Pflegeberuf\"',
-    'category' => 'plugin',
+    'category' => 'distribution',
     'author' => 'Joe Schäfer',
     'author_email' => 'mail@schaefer-webentwicklung.de',
     'state' => 'beta',
