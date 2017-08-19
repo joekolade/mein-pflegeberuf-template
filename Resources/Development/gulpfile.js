@@ -160,10 +160,12 @@ gulp.task('wiredep', () => {
 
   gulp.src('app/*.html')
     .pipe(wiredep({
+      exclude: ['bootstrap'],
       ignorePath: /^(\.\.\/)*\.\./
     }))
     .pipe(gulp.dest('app'));
 });
+
 
 // gulp: typo3
 gulp.task('t3copyStyles, t3copyImages', ['html'], () => {
@@ -197,8 +199,8 @@ gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras', 'typo3'], () =>
 });
 
 gulp.task('default', () => {
-	return new Promise(resolve => {
-		dev = false;
-runSequence(['clean', 'wiredep'], 'build', resolve);
-});
+  return new Promise(resolve => {
+    dev = false;
+    runSequence(['clean', 'wiredep'], 'build', resolve);
+  });
 });
