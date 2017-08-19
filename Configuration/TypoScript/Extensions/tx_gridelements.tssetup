@@ -1,0 +1,9 @@
+tt_content.gridelements_pi1.20.10.setup {
+    specialbox < lib.gridelements.defaultGridSetup
+    specialbox {
+        cObject = FLUIDTEMPLATE
+        cObject {
+            file = EXT:meinpflegeberuf/Resources/Extensions/gridelements/Specialbox.html
+        }
+    }
+}

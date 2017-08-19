@@ -1,0 +1,63 @@
+# Load default processing options
+imports:
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Processing.yaml" }
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml" }
+
+editor:
+  config:
+
+    # available block level elements
+    format_tags: "p;h1;h2;h3;h4"
+
+    # toolbar // use button configuration if needed
+    # http://ckeditor.com/latest/samples/toolbarconfigurator/index.html#basic
+    toolbarGroups:
+      - { name: 'styles', groups: [ 'styles' ] }
+      - { name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ] }
+      - { name: 'paragraph', groups: [ 'list', 'indent', 'blocks', 'align', 'bidi', 'paragraph' ] }
+      - { name: 'links', groups: [ 'links' ] }
+      - { name: 'clipboard', groups: [ 'clipboard', 'undo' ] }
+      - { name: 'editing', groups: [ 'spellchecker', 'find', 'selection', 'editing' ] }
+      - { name: 'insert', groups: [ 'insert' ] }
+      - { name: 'tools', groups: [ 'tools' ] }
+      - { name: 'others', groups: [ 'others' ] }
+      - { name: 'document', groups: [ 'mode', 'doctools', 'document' ] }
+      - { name: 'colors', groups: [  { name: 'colors', items: [ 'TextColor', 'BGColor' ] } ] }
+
+    removeButtons: 'Save,NewPage,Preview,Print,Templates,Cut,Copy,Find,Replace,SelectAll,Form,Checkbox,Radio,TextField,Textarea,Select,Button,ImageButton,HiddenField,CreateDiv,BidiLtr,BidiRtl,Language,Image,Flash,PageBreak,Iframe,Smiley,Font,FontSize,About,TextColor,BGColor,Strike,Underline,Subscript,Superscript,CopyFormatting'
+
+    # remove buttons explicitly
+    # removeButtons:
+
+    # CSS stylesheet
+    #contentsCss: "EXT:befra_template/Resources/Public/Css/rte.css"
+    contentsCss: ["EXT:rte_ckeditor/Resources/Public/Css/contents.css", "EXT:befra_template/Resources/Public/Css/rte.css"]
+
+
+
+    stylesSet:
+      # block level styles
+      - { name: "Text in Box", element: "p", attributes: { class: 'special' } }
+      - { name: "Markierter block", element: "p", attributes: { class: 'text-danger' } }
+      # Inline styles
+      - { name: "Markierter text", element: "span", attributes: { class: 'text-danger' } }
+
+    # Plugin configuration
+    removePlugins:
+      - image
+    extraPlugins:
+      - justify
+      - font
+      - find
+      - bidi
+      - colorbutton
+      - colordialog
+    colorButton_colors:
+      'CF5D4E,454545,FFF,CCC,DDD,CCEAEE,66AB16'
+    justifyClasses:
+      - align-left
+      - align-center
+      - align-right
+      - align-justify
+  externalPlugins:
+    typo3link: { resource: "EXT:rte_ckeditor/Resources/Public/JavaScript/Plugins/typo3link.js", route: "rteckeditor_wizard_browse_links" }
