@@ -1,0 +1,12 @@
+
+// Typekit font
+//
+
+
+@mixin hausschrift(){
+	font-family: "myriad-pro";
+}
+
+body {
+  @include hausschrift;
+}

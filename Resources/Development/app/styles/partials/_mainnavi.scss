@@ -1,0 +1,29 @@
+
+// Main navi
+//
+
+$mainnav-bg: #F2F1EE;
+$mainnav-color: $body-color;
+
+$mainnav-fsize: 1.2142857143 * $font-size-base; // 17px
+
+nav.mainnav {
+  background: $mainnav-bg;
+
+  font-size: $mainnav-fsize;
+
+  a {
+	color: $mainnav-color;
+
+	&.active {
+	  //color: darken($link-color, 20%);
+	}
+
+	&.active,
+	&:hover {
+	  color: $link-color;
+	}
+  }
+}
+
+ul.nav {}
