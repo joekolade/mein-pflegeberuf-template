@@ -82,14 +82,13 @@ mod.web_layout.BackendLayouts {
 		#icon = EXT:example_extension/Resources/Public/Images/BackendLayouts/default.gif
 		config {
 			backend_layout {
-				colCount = 3
-				rowCount = 4
+				colCount = 1
+				rowCount = 3
 				rows {
 					1 {
 						columns {
 							1 {
 								name = Stage
-								colspan = 3
 								colPos = 11
 								allowed = *
 								allowedGridType = *
@@ -101,7 +100,6 @@ mod.web_layout.BackendLayouts {
 						columns {
 							1 {
 								name = Inhalt
-								colspan = 3
 								colPos = 21
 								allowed = *
 								allowedGridType = *
@@ -112,35 +110,9 @@ mod.web_layout.BackendLayouts {
 					3 {
 						columns {
 							1 {
-								name = Footer links
+								name = Footer
 								colPos = 51
 								allowed = *
-								allowedGridType = *
-							}
-
-							2 {
-								name = Footer mitte
-								colPos = 52
-								allowed = *
-								allowedGridType = *
-							}
-
-							3 {
-								name = Footer rechts
-								colPos = 53
-								allowed = *
-								allowedGridType = *
-							}
-						}
-					}
-
-					4 {
-						columns {
-							1 {
-								name = Footer (unterhalb)
-								colspan = 3
-								colPos = 41
-								allowed = list
 								allowedGridType = *
 							}
 						}
@@ -150,7 +122,7 @@ mod.web_layout.BackendLayouts {
 		}
 	}
 
-	3 {
+	2 {
 		title = Standard-Seite
 		#icon = EXT:example_extension/Resources/Public/Images/BackendLayouts/default.gif
 		config {

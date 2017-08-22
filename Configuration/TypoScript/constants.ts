@@ -1,8 +1,8 @@
 meinpflegeberuf {
 	site {
-		domain = dev.befra-energietechnik.de
+		domain = meinpflegeberuf.local
 
-		logoFile = EXT:meinpflegeberuf/Resources/Public/Images/logo_befra_web.svg
+		logoFile = EXT:meinpflegeberuf/Resources/Public/Images/logo_mein_pflegeberuf.jpg
 		name = Mein Pflegeberuf
 	}
 
