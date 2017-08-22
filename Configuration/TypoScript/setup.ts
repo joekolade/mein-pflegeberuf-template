@@ -40,6 +40,13 @@ page.includeCSS {
 	main = EXT:meinpflegeberuf/Resources/Public/Css/main.css
 }
 
+// Typekit
+page.headerData.333 = TEXT
+page.headerData.333.value (
+<script src="https://use.typekit.net/vja5ysq.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+)
+
 page.includeJS.modernizr = EXT:meinpflegeberuf/Resources/Public/JavaScripts/vendor/modernizr.js
 page.includeJS.vendor = EXT:meinpflegeberuf/Resources/Public/JavaScripts/vendor.js
 
