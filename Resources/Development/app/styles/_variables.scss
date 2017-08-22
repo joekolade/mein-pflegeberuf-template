@@ -81,3 +81,10 @@ $grid-breakpoints: (
 );
 
 $font-size-base: 0.875rem; // 14px
+
+// Navi
+
+$mainnav-bg: #F2F1EE;
+$mainnav-fsize: 1.2142857143 * $font-size-base; // 17px
+
+$nav-color: $body-color;

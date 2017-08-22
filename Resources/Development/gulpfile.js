@@ -168,7 +168,7 @@ gulp.task('wiredep', () => {
 
 
 // gulp: typo3
-gulp.task('t3copyStyles, t3copyImages', ['html'], () => {
+gulp.task('t3copyStyles', ['html'], () => {
 	return gulp.src([
 		'dist/styles/**/*'
 	], {
@@ -182,6 +182,13 @@ gulp.task('t3copyJs', () => {
 		dot: true
 	}).pipe(gulp.dest('../Public/JavaScripts'));
 });
+gulp.task('t3copyFonts', () => {
+	return gulp.src([
+		'app/Fonts/**/*/webfonts/**/*'
+	], {
+		dot: true
+	}).pipe(gulp.dest('../Public/Fonts'));
+});
 gulp.task('t3copyImages', () => {
 	return gulp.src([
 		'dist/images/**/*'
@@ -189,7 +196,7 @@ gulp.task('t3copyImages', () => {
 		dot: true
 	}).pipe(gulp.dest('../Public/Images'));
 });
-gulp.task('typo3', ['t3copyStyles'], () => {
+gulp.task('typo3', ['t3copyStyles', 't3copyJs', 't3copyImages', 't3copyFonts'], () => {
 	gulp.start('t3copyJs');
 });
 

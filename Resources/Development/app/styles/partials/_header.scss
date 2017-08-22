@@ -7,4 +7,59 @@ $header-fsize: 1.2142857143 * $font-size-base; // 17px
 
 header.container {
   font-size: $header-fsize;
+
+  padding: $grid-gutter-width $grid-gutter-width/2;
+
+  // Layout via grid
+
+  display: grid;
+  grid-template-columns: 288px 1fr 1fr;
+  grid-template-rows: (88px) 1fr;
+  //grid-column-gap: 15px;
+  //grid-row-gap: 15px;
+  justify-items: stretch;
+  align-items: stretch;
+
+  grid-template-areas:
+    "logo metanav metanav"
+    "logo . socials";
+
+  .logo {
+    grid-area: logo;
+  }
+
+  .metaNavi{
+    grid-area: metanav;
+  }
+
+  .socials{
+    grid-area: socials;
+  }
+}
+
+
+// Metanavi
+//
+
+
+.metaNavi {
+  @include naviLinks;
+
+  ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+  }
+}
+
+
+// socials
+//
+
+
+.socials {
+  @include naviLinks($nav-color);
+
+  display: flex;
+  justify-content: space-around;
 }

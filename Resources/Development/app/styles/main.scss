@@ -8,7 +8,7 @@
 
 
 // Font Awesome 5
-$fa-font-path: "../fonts/fontawesome-5.0.0/webfonts";
+$fa-font-path: "../Fonts/fontawesome-5.0.0/webfonts";
 
 //@import "../fonts/fontawesome-5.0.0/scss/font-awesome-light";
 @import "../fonts/fontawesome-5.0.0/scss/font-awesome-regular";
@@ -19,6 +19,8 @@ $fa-font-path: "../fonts/fontawesome-5.0.0/webfonts";
 
 
 // Partials
+@import "partials/mixins";
+
 @import "partials/header";
 @import "partials/mainnavi";
 @import "partials/content";

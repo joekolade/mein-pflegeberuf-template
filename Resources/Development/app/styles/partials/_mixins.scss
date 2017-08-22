@@ -1,0 +1,18 @@
+
+// MIXINS
+//
+@mixin naviLinks($color: $body-color){
+  a {
+	color: $color;
+
+	&.active {
+	  //color: darken($link-color, 20%);
+	}
+
+	&.active,
+	&:hover {
+	  color: $link-color;
+	  text-decoration: none;
+	}
+  }
+}
