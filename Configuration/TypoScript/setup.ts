@@ -91,28 +91,6 @@ page.10.variables {
 	pageIds_root = TEXT
 	pageIds_root.value = {$meinpflegeberuf.pageIds.root}
 
-
-
-
-
-	breadCrumb = HMENU
-	breadCrumb {
-		special = rootline
-		wrap = <ol class="breadcrumb hidden-xs">|</ol>
-		1 = TMENU
-		1 {
-			NO = 1
-			NO.wrapItemAndSub = <li>|</li>
-
-			CUR < .NO
-			CUR.wrapItemAndSub = <li class="active">|</li>
-		}
-	}
-
-	metaNaviFooter < .metaNavi
-	metaNaviFooter {
-		20.1.NO.ATagParams = class="btn" rel="nofollow"
-	}
 }
 
 /**
@@ -182,6 +160,21 @@ lib {
 				}
 				#typolink.parameter.field = url
 				#typolink.extTarget.field = target
+			}
+		}
+
+		breadcrumb = HMENU
+		breadcrumb {
+			special = rootline
+			wrap = <ol class="breadcrumb">|</ol>
+			1 = TMENU
+			1 {
+				NO = 1
+				NO.wrapItemAndSub = <li class="breadcrumb-item">|</li>
+
+				CUR < .NO
+				CUR.wrapItemAndSub = <li class="breadcrumb-item active">|</li>
+				CUR.doNotLinkIt = 1
 			}
 		}
 	}
