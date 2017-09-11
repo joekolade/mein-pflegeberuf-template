@@ -196,21 +196,9 @@ lib {
 		select.where = {#colPos}=21
 	}
 
-	contentFooterLeft < lib.content_get
-	contentFooterLeft {
+	contentFooter < lib.content_get
+	contentFooter {
 		select.where = {#colPos}=51
-		slide = -1
-	}
-
-	contentFooterMiddle < lib.content_get
-	contentFooterMiddle {
-		select.where = {#colPos}=52
-		slide = -1
-	}
-
-	contentFooterRight < lib.content_get
-	contentFooterRight {
-		select.where = {#colPos}=53
 		slide = -1
 	}
 

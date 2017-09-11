@@ -19,7 +19,8 @@
         "lochmueller/sourceopt": "^1.0",
         "sgalinski/scriptmerger": "^5.0",
         "schnitzler/fluid-styled-responsive-images": "^8.7.0",
-        "instituteweb/unroll": "^2.0"
+        "instituteweb/unroll": "^2.0",
+        "gridelementsteam/gridelements": "dev-master"
     },
     "autoload": {
         "psr-4": {

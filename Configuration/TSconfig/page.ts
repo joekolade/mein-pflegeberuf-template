@@ -112,26 +112,9 @@ mod.web_layout.BackendLayouts {
 					3 {
 						columns {
 							1 {
-								name = Footer links
+								name = Footer
 								colPos = 51
-								allowed = *
-								allowedGridType = *
-							}
-							2 {
-								name = Footer mitte links
-								colPos = 52
-								allowed = *
-								allowedGridType = *
-							}
-							3 {
-								name = Footer mitte rechts
-								colPos = 53
-								allowed = *
-								allowedGridType = *
-							}
-							4 {
-								name = Footer rechts
-								colPos = 54
+								colspan = 4
 								allowed = *
 								allowedGridType = *
 							}
