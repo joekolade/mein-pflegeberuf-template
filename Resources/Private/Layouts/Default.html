@@ -1,11 +1,12 @@
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers">
+<html xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
 <!--[if IE]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+	your browser</a> to improve your experience.</p>
 <![endif]-->
 
 
-<div class="mobile-menu" xmlns:f="http://www.w3.org/1999/html">
+<div class="mobile-menu">
 	<div class="menu-background" style="cursor: pointer;"></div>
 	<div class="app-menu-container">
 		<div class="app-menu">
@@ -18,7 +19,6 @@
 		</div>
 	</div>
 </div>
-</div>
 
 <div class="wrapper">
 	<header class="container">
@@ -29,14 +29,8 @@
 		<f:render partial="Navigation/Meta"></f:render>
 
 
-		<div class="socials">
-			<a href="#" target="_blank"><i class="fab fa-google-plus-g"></i></a>
-			<a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-			<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-			<a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-			<a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
-			<a href="#" target="_blank"><i class="fab fa-xing"></i></a>
-		</div>
+		<f:render partial="Navigation/Socials"></f:render>
+
 	</header>
 
 	<div class="container">
@@ -52,7 +46,7 @@
 
 	<div class="container">
 
-			<f:render section="main"></f:render>
+		<f:render section="main"></f:render>
 
 	</div>
 
@@ -94,7 +88,9 @@
 				<div class="col">
 					<h3>Personal Recruiting</h3>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cum eveniet fugiat inventore itaque labore laborum magni minus molestiae nobis praesentium quos, ratione reiciendis repellat rerum saepe sapiente tempora totam!
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cum eveniet fugiat inventore
+						itaque labore laborum magni minus molestiae nobis praesentium quos, ratione reiciendis repellat
+						rerum saepe sapiente tempora totam!
 					</p>
 				</div>
 			</div>

@@ -164,6 +164,21 @@ lib {
 				1.CUR < .1.ACT
 			}
 		}
+
+		socials < .meta.20
+		socials {
+			special.value = {$meinpflegeberuf.pageIds.socialNaviRoot}
+			wrap >
+			1.NO {
+				stdWrap.cObject = TEXT
+				stdWrap.cObject {
+					wrap = <i class="fab fa-|"></i>
+					field = title
+				}
+				#typolink.parameter.field = url
+				#typolink.extTarget.field = target
+			}
+		}
 	}
 
 	contentStage < lib.content_get
