@@ -8,7 +8,7 @@ meinpflegeberuf {
 
 	pageIds {
 		root = 1
-		metaNaviRoot = 9
+		metaNaviRoot = 11
 
 		quickform = 22
 		contact = 6

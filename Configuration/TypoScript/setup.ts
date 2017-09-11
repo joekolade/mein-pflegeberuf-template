@@ -112,27 +112,7 @@ page.10.variables {
 		3 < .2
 	}
 
-	metaNavi = COA
-	metaNavi {
-		20 = HMENU
-		20 {
-			special = directory
-			special.value = {$meinpflegeberuf.pageIds.metaNaviRoot}
-			special.value = 9
 
-			wrap = <ul class="list-inline">|</ul>
-
-			1 = TMENU
-			1.NO = 1
-			#1.NO.ATagParams = class="btn"
-			1.wrap = <li>|</li>
-
-			1.ACT < .1.NO
-			1.ACT.wrap = <li class="active">|</li>
-
-			1.CUR < .1.ACT
-		}
-	}
 
 	breadCrumb = HMENU
 	breadCrumb {
@@ -159,6 +139,32 @@ page.10.variables {
 */
 
 lib {
+
+	// Navis
+	//
+
+	nav {
+
+		meta = COA
+		meta {
+			20 = HMENU
+			20 {
+				special = directory
+				special.value = {$meinpflegeberuf.pageIds.metaNaviRoot}
+
+				wrap = <ul>|</ul>
+
+				1 = TMENU
+				1.NO = 1
+				1.wrapItemAndSub = <li>|</li>
+
+				1.ACT < .1.NO
+				1.ACT.wrapItemAndSub = <li class="active">|</li>
+
+				1.CUR < .1.ACT
+			}
+		}
+	}
 
 	contentStage < lib.content_get
 	contentStage {

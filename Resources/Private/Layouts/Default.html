@@ -1,9 +1,11 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers">
+
 <!--[if IE]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
 
-<div class="mobile-menu">
+<div class="mobile-menu" xmlns:f="http://www.w3.org/1999/html">
 	<div class="menu-background" style="cursor: pointer;"></div>
 	<div class="app-menu-container">
 		<div class="app-menu">
@@ -23,13 +25,10 @@
 		<div class="logo">
 			{logoFile ->f:format.raw()}
 		</div>
-		<nav class="metaNavi">
-			<ul>
-				<li><a href="">Anzeige Aufgeben</a></li>
-				<li><a href="">Kontakt</a></li>
-				<li><a href="">Impressum</a></li>
-			</ul>
-		</nav>
+
+		<f:render partial="Navigation/Meta"></f:render>
+
+
 		<div class="socials">
 			<a href="#" target="_blank"><i class="fab fa-google-plus-g"></i></a>
 			<a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -102,3 +101,5 @@
 		</div>
 	</footer>
 </div>
+
+</html>
