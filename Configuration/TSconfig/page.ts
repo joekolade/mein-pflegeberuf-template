@@ -2,27 +2,27 @@ tx_gridelements {
 	excludeLayoutIds = slider,tabsSimple,tabs4,tabs6,accordion,slider
 
 	setup {
-		specialbox {
-			title = Spezial Box
-			description = Box mit Bild links und Inhalt rechts
-			icon = EXT:bootstrap_grids/Resources/Public/Icons/gridlayout_col2.gif
-			frame = 1
-			topLevelLayout = 1
-			config {
-				colCount = 1
-				rowCount = 1
-				rows.1 {
-					columns {
-						1 {
-							name = LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:celayout.rightColumn
-							colPos = 101
-						}
-					}
-				}
-			}
-
-			flexformDS = FILE:EXT:befra_template/Resources/Extensions/gridelements/flexform_specialbox.xml
-		}
+#		specialbox {
+#			title = Spezial Box
+#			description = Box mit Bild links und Inhalt rechts
+#			icon = EXT:bootstrap_grids/Resources/Public/Icons/gridlayout_col2.gif
+#			frame = 1
+#			topLevelLayout = 1
+#			config {
+#				colCount = 1
+#				rowCount = 1
+#				rows.1 {
+#					columns {
+#						1 {
+#							name = LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:celayout.rightColumn
+#							colPos = 101
+#						}
+#					}
+#				}
+#			}
+#
+#			flexformDS = FILE:EXT:befra_template/Resources/Extensions/gridelements/flexform_specialbox.xml
+#		}
 	}
 }
 
