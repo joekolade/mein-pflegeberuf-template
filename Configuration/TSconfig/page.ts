@@ -82,14 +82,15 @@ mod.web_layout.BackendLayouts {
 		#icon = EXT:example_extension/Resources/Public/Images/BackendLayouts/default.gif
 		config {
 			backend_layout {
-				colCount = 1
-				rowCount = 3
+				colCount = 4
+				rowCount = 4
 				rows {
 					1 {
 						columns {
 							1 {
 								name = Stage
 								colPos = 11
+								colspan = 4
 								allowed = *
 								allowedGridType = *
 							}
@@ -101,6 +102,7 @@ mod.web_layout.BackendLayouts {
 							1 {
 								name = Inhalt
 								colPos = 21
+								colspan = 4
 								allowed = *
 								allowedGridType = *
 							}
@@ -110,12 +112,42 @@ mod.web_layout.BackendLayouts {
 					3 {
 						columns {
 							1 {
-								name = Footer
+								name = Footer links
 								colPos = 51
 								allowed = *
 								allowedGridType = *
 							}
+							2 {
+								name = Footer mitte links
+								colPos = 52
+								allowed = *
+								allowedGridType = *
+							}
+							3 {
+								name = Footer mitte rechts
+								colPos = 53
+								allowed = *
+								allowedGridType = *
+							}
+							4 {
+								name = Footer rechts
+								colPos = 54
+								allowed = *
+								allowedGridType = *
+							}
 						}
+					}
+					4 {
+						columns {
+							1 {
+								name = Nicht verwendete Elemente
+								colPos = -2
+								colspan = 4
+								allowed = *
+								allowedGridType = *
+							}
+						}
+
 					}
 				}
 			}
@@ -127,18 +159,31 @@ mod.web_layout.BackendLayouts {
 		#icon = EXT:example_extension/Resources/Public/Images/BackendLayouts/default.gif
 		config {
 			backend_layout {
-				colCount = 1
-				rowCount = 1
+				colCount = 4
+				rowCount = 2
 				rows {
 					1 {
 						columns {
 							1 {
 								name = Inhalt
 								colPos = 21
+								colspan = 4
 								allowed = *
 								allowedGridType = *
 							}
 						}
+					}
+					2 {
+						columns {
+							1 {
+								name = Nicht verwendete Elemente
+								colPos = -2
+								colspan = 4
+								allowed = *
+								allowedGridType = *
+							}
+						}
+
 					}
 				}
 			}
