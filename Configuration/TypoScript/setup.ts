@@ -91,26 +91,7 @@ page.10.variables {
 	pageIds_root = TEXT
 	pageIds_root.value = {$meinpflegeberuf.pageIds.root}
 
-	mainNavi = HMENU
-	mainNavi {
-		1 = TMENU
-		1 {
-			expAll = 1
 
-			NO = 1
-			NO.wrapItemAndSub = <li>|</li>
-
-			ACT < .NO
-			ACT.wrapItemAndSub = <li class="active">|</li>
-
-			CUR < .ACT
-		}
-
-		2 < .1
-		2.wrap = <ul class="subnav">|</ul>
-
-		3 < .2
-	}
 
 
 
@@ -144,6 +125,30 @@ lib {
 	//
 
 	nav {
+
+		main = HMENU
+		main {
+			wrap = <ul class="nav">|</ul>
+			1 = TMENU
+			1 {
+				expAll = 1
+
+				NO = 1
+				NO.wrapItemAndSub = <li class="nav-item">|</li>
+				NO.ATagParams = class=nav-link
+
+				ACT < .NO
+				ACT.wrapItemAndSub = <li class="nav-item active">|</li>
+				ACT.ATagParams = class="nav-link active"
+
+				CUR < .ACT
+			}
+
+			#2 < .1
+			#2.wrap = <ul class="subnav">|</ul>
+
+			#3 < .2
+		}
 
 		meta = COA
 		meta {
