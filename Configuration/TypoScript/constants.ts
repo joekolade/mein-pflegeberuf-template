@@ -1,23 +1,28 @@
 meinpflegeberuf {
 	site {
-		domain = meinpflegeberuf.local
+		#domain = meinpflegeberuf.local
+		domain = typo3.p410532.webspaceconfig.de
 
 		logoFile = EXT:meinpflegeberuf/Resources/Public/Images/logo_mein_pflegeberuf.jpg
 		name = Mein Pflegeberuf
 	}
 
 	pageIds {
-		root = 1
+		root = 2
 
-		metaNaviRoot = 11
-		socialNaviRoot = 12
+		metaNaviRoot = 16
+		socialNaviRoot = 9
 
-		quickform = 22
-		contact = 6
+		#quickform = 22
+		#contact = 6
 	}
 
-	quickformUid = 33
+	#quickformUid = 33
 }
+[hostname = meinpflegeberuf.local] || [globalString = IENV:HTTP_HOST = meinpflegeberuf.local]
+	meinpflegeberuf.site.domain = meinpflegeberuf.local
+[global]
+
 
 /**
 * scriptmerger_constants.ts
