@@ -17,7 +17,6 @@ page.10 {
 	}
 }
 
-
 page.meta {
 	viewport = width=device-width, initial-scale=1
 	# bing webmaster
@@ -53,6 +52,7 @@ page.includeJS.vendor = EXT:meinpflegeberuf/Resources/Public/JavaScripts/vendor.
 page.includeJSFooterlibs {
 	plugins = EXT:meinpflegeberuf/Resources/Public/JavaScripts/plugins.js
 }
+
 page.includeJSFooter {
 	main = EXT:meinpflegeberuf/Resources/Public/JavaScripts/main.js
 }
@@ -73,14 +73,12 @@ lib.content_get {
 *
 */
 page.10.variables {
-
 	layout = TEXT
 	layout.data = levelfield:-2,backend_layout_next_level,slide
 	layout.override.field = backend_layout
 
 	hasStage = TEXT
 	hasStage.value = 1
-
 
 	logoFile = FILE
 	logoFile.file = {$meinpflegeberuf.site.logoFile}
@@ -90,7 +88,6 @@ page.10.variables {
 
 	pageIds_root = TEXT
 	pageIds_root.value = {$meinpflegeberuf.pageIds.root}
-
 }
 
 /**
@@ -98,12 +95,10 @@ page.10.variables {
 */
 
 lib {
-
 	// Navis
 	//
 
 	nav {
-
 		main = HMENU
 		main {
 			wrap = <ul class="nav">|</ul>
@@ -158,23 +153,27 @@ lib {
 					wrap = <i class="fab fa-|"></i>
 					field = title
 				}
+
 				#typolink.parameter.field = url
 				#typolink.extTarget.field = target
 			}
 		}
 
-		breadcrumb = HMENU
+		breadcrumb = COA
 		breadcrumb {
-			special = rootline
 			wrap = <ol class="breadcrumb">|</ol>
-			1 = TMENU
-			1 {
-				NO = 1
-				NO.wrapItemAndSub = <li class="breadcrumb-item">|</li>
+			10 = HMENU
+			10 {
+				special = rootline
+				1 = TMENU
+				1 {
+					NO = 1
+					NO.wrapItemAndSub = <li class="breadcrumb-item">|</li>
 
-				CUR < .NO
-				CUR.wrapItemAndSub = <li class="breadcrumb-item active">|</li>
-				CUR.doNotLinkIt = 1
+					CUR < .NO
+					CUR.wrapItemAndSub = <li class="breadcrumb-item active">|</li>
+					CUR.doNotLinkIt = 1
+				}
 			}
 		}
 	}
@@ -195,14 +194,12 @@ lib {
 		slide = -1
 	}
 
-
 	superFooter < lib.content_get
 	superFooter {
 		select.where = {#colPos}=41
 		slide = -1
 	}
 }
-
 
 /**
 * Header w/ tags

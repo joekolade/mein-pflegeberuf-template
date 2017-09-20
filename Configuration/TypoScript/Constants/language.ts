@@ -1,6 +1,6 @@
 meinpflegeberuf {
     language = de
-    languageKey = de_DE
+    languageKey = de
 
     text {
     }
