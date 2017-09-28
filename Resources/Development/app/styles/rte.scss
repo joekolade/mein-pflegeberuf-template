@@ -1,4 +1,6 @@
-
+.rte {
+  margin: 0;
+}
 @import "variables";
 
 
@@ -21,26 +23,7 @@ $fa-font-path: "../Fonts/fontawesome-5.0.0/webfonts";
 // Partials
 @import "partials/mixins";
 
-@import "partials/header";
-@import "partials/mainnavi";
 @import "partials/content";
-@import "partials/footer";
 @import "partials/fonts";
 
 @import "partials/blockstile";
-
-
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
-
-
-/* Responsive: Portrait tablets and up */
-@include media-breakpoint-up(lg){
-  .container {
-    max-width: 62rem; // 992px
-  }
-}
