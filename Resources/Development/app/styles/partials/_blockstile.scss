@@ -1,0 +1,23 @@
+// Block stile
+//
+
+@mixin blockstile {
+  background: map_get($theme-colors, 'primary');
+  color: white;
+  font-weight: bold;
+  padding: 0.25rem;
+}
+
+.block {
+
+  // Blockstil 1
+  &-1 {
+    @include blockstile;
+    font-size: 2rem;
+  }
+
+  // Blockstil 2
+  &-2 {
+    @include blockstile;
+  }
+}
