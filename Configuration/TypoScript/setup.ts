@@ -37,6 +37,9 @@ config.tx_frontend_editing = 0
 
 page.includeCSS {
 	main = EXT:meinpflegeberuf/Resources/Public/Css/main.css
+
+	print = EXT:meinpflegeberuf/Resources/Public/Css/print.css
+	print.media = print
 }
 
 // Typekit

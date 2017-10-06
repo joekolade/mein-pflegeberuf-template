@@ -1,7 +1,7 @@
 meinpflegeberuf {
 	site {
 		#domain = meinpflegeberuf.local
-		domain = typo3.p410532.webspaceconfig.de
+		domain = www.mein-pflegeberuf.de
 
 		logoFile = EXT:meinpflegeberuf/Resources/Public/Images/logo_mein_pflegeberuf.jpg
 		name = Mein Pflegeberuf

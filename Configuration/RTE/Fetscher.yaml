@@ -31,13 +31,14 @@ editor:
 
     # CSS stylesheet
     #contentsCss: "EXT:befra_template/Resources/Public/Css/rte.css"
-    contentsCss: ["EXT:rte_ckeditor/Resources/Public/Css/contents.css", "EXT:befra_template/Resources/Public/Css/rte.css"]
+    contentsCss: ["EXT:rte_ckeditor/Resources/Public/Css/contents.css", "EXT:meinpflegeberuf/Resources/Public/Css/rte.css"]
 
 
 
     stylesSet:
       # block level styles
-      - { name: "Text in Box", element: "p", attributes: { class: 'special' } }
+      - { name: "Blockstyle 1", element: "p", attributes: { class: 'block-1' } }
+      - { name: "Blockstyle 2", element: "p", attributes: { class: 'block-2' } }
       - { name: "Markierter block", element: "p", attributes: { class: 'text-danger' } }
       # Inline styles
       - { name: "Markierter text", element: "span", attributes: { class: 'text-danger' } }
