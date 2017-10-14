@@ -204,6 +204,10 @@ lib {
 	}
 }
 
+[treeLevel = 0]
+	lib.nav.breadcrumb >
+[global]
+
 /**
 * Header w/ tags
 *
