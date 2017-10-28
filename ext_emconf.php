@@ -40,7 +40,6 @@ $EM_CONF[$_EXTKEY] = [
             'unroll' => '',
             'cookie_hint' => '',
             'fluid_styled_responsive_images' => '',
-            'go_maps_ext' => '',
 
             // Sysextensions
             'opendocs' => '',
@@ -48,6 +47,7 @@ $EM_CONF[$_EXTKEY] = [
         ],
         'conflicts' => [],
         'suggests' => [
+            'go_maps_ext' => '',
             'frontend_editing' => '',
             'lib_js_lazysizes' => '', // https://github.com/joekolade/lib_js_lazysizes
         ],
