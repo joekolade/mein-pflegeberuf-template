@@ -12,3 +12,8 @@
 h2 {
   color: map_get($theme-colors, 'primary');
 }
+
+.ce-gallery img {
+  height: auto;
+  max-width: 100%;
+}
