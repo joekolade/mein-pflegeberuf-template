@@ -104,26 +104,32 @@ lib {
 	nav {
 		main = HMENU
 		main {
-			wrap = <ul class="nav">|</ul>
+			wrap = <ul class="navbar-nav">|</ul>
 			1 = TMENU
 			1 {
 				expAll = 1
 
 				NO = 1
 				NO.wrapItemAndSub = <li class="nav-item">|</li>
-				NO.ATagParams = class=nav-link
+				NO.ATagParams = class="nav-link"
 
 				ACT < .NO
 				ACT.wrapItemAndSub = <li class="nav-item active">|</li>
-				ACT.ATagParams = class="nav-link active"
+				ACT.ATagParams = class="nav-link ative"
 
 				CUR < .ACT
 			}
 
-			#2 < .1
-			#2.wrap = <ul class="subnav">|</ul>
+			2 < .1
+			2.wrap = <ul class="subnav">|</ul>
 
-			#3 < .2
+			3 < .2
+
+		}
+
+		mobile = HMENU
+		mobile {
+
 		}
 
 		meta = COA

@@ -2,12 +2,126 @@
 // Main navi
 //
 
-nav.mainnav {
-  background: $mainnav-bg;
+$navbar-default-link-hover-bg: map_get($theme-colors, 'brown');
+$item-min-width: 200px;
+$navbar-default-bg: $mainnav-bg;
+$navbar-default-link-color: $body-color;
+$navbar-default-link-hover-color: $link-hover-color;
+
+//
+// Navigation styles
+//
+
+.navbar {
 
   font-size: $mainnav-fsize;
 
   @include naviLinks($nav-color);
-}
 
-ul.nav {}
+  background: $navbar-default-bg;
+
+  z-index: 20;
+  border-width: 1px 0;
+
+  li {
+	min-width: $item-min-width - 40px;
+	position: relative;
+
+	a {
+	  background-color: $navbar-default-bg;
+	  color: $navbar-default-link-color;
+	  //
+	  //      text-decoration: none;
+	  //
+	  //      i {
+	  //        position: absolute;
+	  //        right: 0;
+	  //        background: $navbar-default-link-hover-bg;
+	  //      }
+	  //    }
+	  //    &.active > a,
+	  //    &:hover > a {
+	  //      color: $navbar-default-link-hover-color;
+	  //      background-color: $navbar-default-link-hover-bg;
+	}
+  }
+
+  .subnav {
+	z-index: 21;
+	max-height: 0;
+	overflow: hidden;
+	padding-top: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	//width: 100%;
+	min-width: 120%;
+	max-width: 135%;
+	transition: max-height 0.3s linear;
+
+	.subnav {
+	  z-index: 22;
+	  top: 0;
+	  left: 100%;
+	  padding-left: 1px;
+	  a {
+		padding-left: ($grid-gutter-width * 3);
+	  }
+	}
+
+	li {
+	  margin: 0;
+	  padding: 0;
+	  padding-top: 1px;
+	  a {
+		display: block;
+		// padding: 11px 15px 12px;
+		font-size: 0.7em;
+		padding: 3px 4px;
+		padding-left: ($grid-gutter-width * 1.5);
+
+	  }
+	}
+
+	&.open {
+	  max-height: 999px;
+
+	  > li > a {
+		background: $navbar-default-link-hover-bg;
+	  }
+	}
+  }
+
+  @include media-breakpoint-up(md) {
+	.menu-toggle {
+	  display: none;
+	}
+  }
+  /* Responsive: Portrait tablets and up */
+  @media screen and (min-width: 768px) {
+	ul {
+	  position: relative;
+
+	  li {
+
+		&:hover > .subnav {
+		  max-height: 999px;
+		  overflow: visible;
+		}
+	  }
+	}
+	.subnav {
+	  position: absolute;
+	  padding-left: 0;
+
+	  .subnav {
+		padding-left: 1px;
+	  }
+
+	  .subnav li > a,
+	  li > a {
+		padding: 11px 15px 12px;
+	  }
+	}
+  }
+}

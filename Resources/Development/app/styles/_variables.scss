@@ -54,6 +54,7 @@ $colors: (
 );
 
 $pflegeblau: #00c5ff;
+$pflegebraun: #9b9687;
 
 $theme-colors: (
   primary: $pflegeblau,
@@ -63,7 +64,9 @@ $theme-colors: (
   warning: $yellow,
   danger: $red,
   light: $gray-100,
-  dark: $gray-900
+  dark: $gray-900,
+  blue: $pflegeblau,
+  brown: $pflegebraun,
 );
 
 $body-color: #444;

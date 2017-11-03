@@ -6,27 +6,11 @@
 <![endif]-->
 
 
-<div class="mobile-menu">
-	<div class="menu-background" style="cursor: pointer;"></div>
-	<div class="app-menu-container">
-		<div class="app-menu">
-			<div class="top">
-				<!--TOP-->
-			</div>
-			<div class="bottom">
-				<!--Menü-->
-			</div>
-		</div>
-	</div>
-</div>
+<f:render partial="Navigation/Mobile"></f:render>
 
 <div class="wrapper">
 	<header class="container">
-		<div class="logo">
-			<a href="/">
-				{logoFile ->f:format.raw()}
-			</a>
-		</div>
+		<f:render partial="Logo"></f:render>
 
 		<f:render partial="Navigation/Meta"></f:render>
 
