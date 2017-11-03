@@ -47,14 +47,39 @@
 		<div class="app-menu">
 			<div class="top">
 				<!--TOP-->
+				<div class="logo">
+					<img src="images/logo_mein_pflegeberuf.jpg" alt="" class="img-fluid">
+				</div>
 			</div>
 			<div class="bottom">
 				<!--Menü-->
-				<ul>
-					<li><a href="">lorem</a></li>
-					<li><a href="">lorem</a></li>
-					<li><a href="">lorem</a></li>
-					<li><a href="">lorem</a></li>
+				<ul class="nav flex-column">
+					<li class="nav-item"><a href="stellenangebote/" class="nav-link">Stellenangebote</a></li>
+					<li class="nav-item active">
+						<a href="einrichtungen/" class="nav-link active">Einrichtungen</a>
+						<a class="btn btn-primary submenu-toggle"><i class="far fa-angle-down"></i></a>
+						<ul class="subnav">
+							<li class="nav-item active">
+								<a href="einrichtungen/seniorenzentrum-josefspark/" class="nav-link ative">Seniorenzentrum Josefspark</a>
+								<a class="btn btn-primary submenu-toggle"><i class="far fa-angle-down"></i></a>
+								<ul class="subnav">
+									<li class="nav-item active">
+										<a href="" class="nav-link ative">Lorem ipsum.</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item"><a href="angebote-fuer-anzeigenschalter/" class="nav-link">Info für
+						Anzeigenschalter</a>
+						<a class="btn btn-primary submenu-toggle"><i class="far fa-angle-down"></i></a>
+						<ul class="subnav">
+							<li class="nav-item"><a href="angebote-fuer-anzeigenschalter/stellenangebot-aufgeben/"
+													class="nav-link">Stellenanzeige aufgeben</a></li>
+							<li class="nav-item"><a href="angebote-fuer-anzeigenschalter/konditionen/" class="nav-link">Konditionen</a>
+							</li>
+						</ul>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -68,7 +93,7 @@
 			<img src="images/logo_mein_pflegeberuf.jpg" alt="" class="img-fluid">
 		</div>
 		<nav class="metaNavi">
-			<ul>
+			<ul class="list-unstyled">
 				<li><a href="">Anzeige Aufgeben</a></li>
 				<li><a href="">Kontakt</a></li>
 				<li><a href="">Impressum</a></li>
@@ -76,7 +101,7 @@
 		</nav>
 		<div class="socials">
 			<a href="#" target="_blank"><i class="fab fa-google-plus-g"></i></a>
-			<a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+			<a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
 			<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
 			<a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
 			<a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
@@ -86,7 +111,8 @@
 
 	<div class="container">
 		<nav class="navbar navbar-expand-md">
-			<button class="menu-toggle btn btn-light" type="button" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="menu-toggle btn btn-light" type="button" aria-expanded="false"
+					aria-label="Toggle navigation">
 				<i class="far fa-bars"></i> &nbsp; &nbsp; Navigation
 			</button>
 
@@ -96,13 +122,16 @@
 					<li class="nav-item"><a class="nav-link" href="stellenangebote/">Stellenangebote</a></li>
 					<li class="nav-item active"><a class="nav-link" href="einrichtungen/">Einrichtungen</a>
 						<ul class="subnav">
-							<li class="nav-item active"><a class="nav-link" href="einrichtungen/seniorenzentrum-josefspark/">Seniorenzentrum
+							<li class="nav-item active"><a class="nav-link"
+														   href="einrichtungen/seniorenzentrum-josefspark/">Seniorenzentrum
 								Josefspark</a></li>
 						</ul>
 					</li>
-					<li class="nav-item"><a class="nav-link" href="angebote-fuer-anzeigenschalter/">Info für Anzeigenschalter</a>
+					<li class="nav-item"><a class="nav-link" href="angebote-fuer-anzeigenschalter/">Info für
+						Anzeigenschalter</a>
 						<ul class="subnav">
-							<li class="nav-item"><a class="nav-link" href="angebote-fuer-anzeigenschalter/stellenangebot-aufgeben/">Stellenanzeige
+							<li class="nav-item"><a class="nav-link"
+													href="angebote-fuer-anzeigenschalter/stellenangebot-aufgeben/">Stellenanzeige
 								aufgeben</a></li>
 							<li class="nav-item">
 								<a class="nav-link" href="angebote-fuer-anzeigenschalter/konditionen/">Konditionen</a>

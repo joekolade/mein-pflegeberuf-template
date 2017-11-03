@@ -14,20 +14,33 @@ header.container {
 
   display: grid;
   grid-template-columns: 288px 1fr 1fr;
-  grid-template-rows: (88px) 1fr;
+  grid-template-rows: auto auto auto;
   //grid-column-gap: 15px;
-  //grid-row-gap: 15px;
+  grid-row-gap: $grid-gutter-width / 2;
   justify-items: stretch;
   align-items: stretch;
 
   grid-template-areas:
-    "logo metanav metanav"
-    "logo . socials";
+    "metanav metanav metanav"
+    "logo logo logo"
+    "socials socials socials";
+
+  @include media-breakpoint-up(md) {
+    grid-template-rows: (88px) 1fr;
+    grid-template-areas:
+      "logo metanav metanav"
+      "logo . socials";
+    grid-row-gap: 0;
+  }
 
   .logo {
     grid-area: logo;
-  }
+    text-align: center;
 
+    @include media-breakpoint-up(md) {
+      text-align: left;
+    }
+  }
   .metaNavi{
     grid-area: metanav;
   }
@@ -48,7 +61,23 @@ header.container {
   ul {
     display: flex;
     list-style: none;
-    justify-content: space-around;
+    justify-content: flex-end;
+
+
+    li {
+      margin-left: $grid-gutter-width/2;
+      font-size: 0.8rem;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    ul {
+      justify-content: space-around;
+      li {
+        font-size: 1rem;
+        margin-left: 0;
+      }
+    }
   }
 }
 
@@ -62,4 +91,14 @@ header.container {
 
   display: flex;
   justify-content: space-around;
+
+  a {
+      font-size: 1.5rem;
+  }
+
+  @include media-breakpoint-up(md) {
+    a {
+      margin-left: $grid-gutter-width/2;
+    }
+  }
 }

@@ -1,0 +1,46 @@
+// Mobile navi
+//
+
+.mobile-menu {
+  .top {
+	margin: 1rem 0;
+  }
+  ul.nav {
+
+	@include naviLinks($nav-color);
+
+  }
+
+  li.nav-item {
+	position: relative;
+
+	> .btn {
+	  position: absolute;
+	  top: 0;
+	  right: $grid-gutter-width/2;
+
+	  i.fa-angle-down {
+		transition: .3s;
+	  }
+	  &.open i.fa-angle-down {
+		transform: rotate(180deg);
+	  }
+	}
+  }
+
+  ul.subnav {
+	max-height: 0;
+	overflow: hidden;
+	list-style: none;
+
+	margin-bottom: 0;
+	padding-left: $grid-gutter-width/2;
+	padding-right: $grid-gutter-width/2;
+
+	transition: max-height 0.5s;
+
+	&.open {
+	  max-height: 600px;
+	}
+  }
+}

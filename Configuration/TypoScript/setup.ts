@@ -115,7 +115,7 @@ lib {
 
 				ACT < .NO
 				ACT.wrapItemAndSub = <li class="nav-item active">|</li>
-				ACT.ATagParams = class="nav-link ative"
+				ACT.ATagParams = class="nav-link active" rel="nofollow"
 
 				CUR < .ACT
 			}
@@ -127,9 +127,18 @@ lib {
 
 		}
 
-		mobile = HMENU
+		mobile < .main
 		mobile {
+			wrap = <ul class="nav flex-column">|</ul>
 
+			1.NO.ATagParams = class="nav-link" rel="nofollow"
+			1.ACT.ATagParams = class="nav-link active" rel="nofollow"
+			1.CUR.ATagParams = class="nav-link active" rel="nofollow"
+
+			2 < .1
+			2.wrap = <a class="btn btn-primary submenu-toggle"><i class="far fa-angle-down"></i></a><ul class="subnav">|</ul>
+
+			3 < .2
 		}
 
 		meta = COA
@@ -139,7 +148,7 @@ lib {
 				special = directory
 				special.value = {$meinpflegeberuf.pageIds.metaNaviRoot}
 
-				wrap = <ul>|</ul>
+				wrap = <ul class="list-unstyled">|</ul>
 
 				1 = TMENU
 				1.NO = 1
