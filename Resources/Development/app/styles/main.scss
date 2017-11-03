@@ -1,11 +1,7 @@
-
 @import "variables";
-
-
 // bower:scss
 @import "bower_components/bootstrap/scss/bootstrap.scss";
 // endbower
-
 
 // Font Awesome 5
 $fa-font-path: "../Fonts/fontawesome-5.0.0/webfonts";
@@ -16,7 +12,6 @@ $fa-font-path: "../Fonts/fontawesome-5.0.0/webfonts";
 @import "../fonts/fontawesome-5.0.0/scss/font-awesome-brands";
 @import "../fonts/fontawesome-5.0.0/scss/font-awesome-core";
 // end:fawesome5
-
 
 // Partials
 @import "partials/mixins";
@@ -29,7 +24,6 @@ $fa-font-path: "../Fonts/fontawesome-5.0.0/webfonts";
 
 @import "partials/blockstile";
 
-
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -37,10 +31,11 @@ $fa-font-path: "../Fonts/fontawesome-5.0.0/webfonts";
   padding: 0.2em 0;
 }
 
-
-/* Responsive: Portrait tablets and up */
-@include media-breakpoint-up(lg){
-  .container {
-    max-width: 62rem; // 992px
+body .container {
+  @include media-breakpoint-up(lg) {
+	max-width: 62rem; // 992px
+  }
+  @include media-breakpoint-up(xl) {
+	max-width: 71.875rem; // 1150px
   }
 }

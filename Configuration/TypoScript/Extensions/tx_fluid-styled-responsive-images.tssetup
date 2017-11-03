@@ -1,5 +1,5 @@
-styles.content.textmedia.maxW = 962
-styles.content.textmedia.maxWInText = 962
+styles.content.textmedia.maxW = 1120
+styles.content.textmedia.maxWInText = 1120
 
 tt_content.textmedia {
 	settings {
