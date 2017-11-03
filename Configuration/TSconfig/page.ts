@@ -91,8 +91,8 @@ mod.web_layout.BackendLayouts {
 								name = Stage
 								colPos = 11
 								colspan = 4
-								allowed = *
-								allowedGridType = *
+								allowed = textmedia,list
+								allowedGridType =
 							}
 						}
 					}
@@ -143,9 +143,20 @@ mod.web_layout.BackendLayouts {
 		config {
 			backend_layout {
 				colCount = 4
-				rowCount = 2
+				rowCount = 3
 				rows {
 					1 {
+						columns {
+							1 {
+								name = Stage
+								colPos = 11
+								colspan = 4
+								allowed = textmedia,list
+								allowedGridType =
+							}
+						}
+					}
+					2 {
 						columns {
 							1 {
 								name = Inhalt
@@ -156,7 +167,7 @@ mod.web_layout.BackendLayouts {
 							}
 						}
 					}
-					2 {
+					3 {
 						columns {
 							1 {
 								name = Nicht verwendete Elemente

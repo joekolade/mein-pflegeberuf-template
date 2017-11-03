@@ -1,12 +1,15 @@
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers">
+<html xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
 <f:layout name="Default"></f:layout>
 
-<f:section name="main">
-
+<f:section name="stage">
 	<div class="stage">
 		<f:cObject typoscriptObjectPath="lib.contentStage"></f:cObject>
 	</div>
+</f:section>
+
+<f:section name="main">
+
 	<div class="content">
 
 		<f:cObject typoscriptObjectPath="lib.contentMain"></f:cObject>
