@@ -4,8 +4,6 @@
 
 .content {
   padding: $grid-gutter-width * 1.5 0;
-
-
 }
 
 // Fonts & headings
@@ -16,4 +14,12 @@ h2 {
 .ce-gallery img {
   height: auto;
   max-width: 100%;
+}
+
+.content,
+footer {
+  a {
+    color: inherit;
+    text-decoration: underline;
+  }
 }

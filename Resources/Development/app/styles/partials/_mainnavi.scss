@@ -3,10 +3,19 @@
 //
 
 $navbar-default-link-hover-bg: map_get($theme-colors, 'brown');
-$item-min-width: 200px;
+$item-min-width: 260px;
 $navbar-default-bg: $mainnav-bg;
 $navbar-default-link-color: $body-color;
 $navbar-default-link-hover-color: $link-hover-color;
+
+$navbar-first-hover-bg: map_get($theme-colors, 'primary');
+$navbar-first-hover-color: white;
+
+$subnav-item-color: white;
+$subnav-hover-color: $subnav-item-color;
+$subnav-bg-color: $pflegebraun;
+$subnav-bg-hover-color: darken($pflegebraun, 20%);
+
 
 //
 // Navigation styles
@@ -30,19 +39,22 @@ $navbar-default-link-hover-color: $link-hover-color;
 	a {
 	  background-color: $navbar-default-bg;
 	  color: $navbar-default-link-color;
-	  //
-	  //      text-decoration: none;
-	  //
-	  //      i {
-	  //        position: absolute;
-	  //        right: 0;
-	  //        background: $navbar-default-link-hover-bg;
-	  //      }
-	  //    }
-	  //    &.active > a,
-	  //    &:hover > a {
-	  //      color: $navbar-default-link-hover-color;
-	  //      background-color: $navbar-default-link-hover-bg;
+	}
+
+  }
+
+  // First level
+  ul.navbar-nav > li {
+
+	> a.nav-link {
+	  padding: ($spacer / 2) $spacer;
+	  padding: 0.75rem $spacer;
+	}
+
+	&:active > a,
+	> a:hover {
+	  background-color: $navbar-first-hover-bg;
+	  color: $navbar-first-hover-color;
 	}
   }
 
@@ -50,14 +62,15 @@ $navbar-default-link-hover-color: $link-hover-color;
 	z-index: 21;
 	max-height: 0;
 	overflow: hidden;
-	padding-top: 0;
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	//width: 100%;
-	min-width: 120%;
+
+	min-width: 100%;
 	max-width: 135%;
 	transition: max-height 0.3s linear;
+
+	background-color: none;
 
 	.subnav {
 	  z-index: 22;
@@ -73,13 +86,21 @@ $navbar-default-link-hover-color: $link-hover-color;
 	  margin: 0;
 	  padding: 0;
 	  padding-top: 1px;
+	  min-width: $item-min-width - 40px;
+
 	  a {
+	  	background-color: $subnav-bg-color;
 		display: block;
 		// padding: 11px 15px 12px;
-		font-size: 0.7em;
+		//font-size: 0.7em;
 		padding: 3px 4px;
 		padding-left: ($grid-gutter-width * 1.5);
+		color: $subnav-item-color;
 
+		&:hover {
+		  background-color: $subnav-bg-hover-color;
+		  color: $subnav-hover-color;
+		}
 	  }
 	}
 

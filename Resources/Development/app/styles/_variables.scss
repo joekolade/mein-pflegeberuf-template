@@ -54,7 +54,8 @@ $colors: (
 );
 
 $pflegeblau: #00c5ff;
-$pflegebraun: #9b9687;
+//$pflegebraun: #9b9687; // #bfb8a6;
+$pflegebraun: #bfb8a6;
 
 $theme-colors: (
   primary: $pflegeblau,
@@ -69,8 +70,9 @@ $theme-colors: (
   brown: $pflegebraun,
 );
 
-$body-color: #444;
-
+//$body-color: #444;
+$body-color: #555555;
+$link-color: $body-color;
 
 // Sizes
 //
@@ -84,16 +86,19 @@ $grid-breakpoints: (
 );
 
 
-$h1-font-size: 2rem;
+$h1-font-size: 2rem; //
 $h2-font-size: 1.375rem;
 $h3-font-size: 1.375rem;
 $h4-font-size: 1.2rem;
 $h5-font-size: 1.1rem;
 $h6-font-size: 1rem;
 
-$font-size-base: 0.875rem; // 14pxx
+$font-size-base: 0.875rem; // 14px
+$font-size-base: 0.9375rem; // 15px
 
 // Navi
+
+$navbar-padding-y: 0;
 
 $mainnav-bg: #F2F1EE;
 $mainnav-fsize: 1.2142857143 * $font-size-base; // 17px
