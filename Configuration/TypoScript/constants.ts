@@ -23,6 +23,11 @@ meinpflegeberuf {
 	meinpflegeberuf.site.domain = meinpflegeberuf.local
 [global]
 
+/**
+* images
+*/
+styles.content.textmedia.maxW = 1200
+styles.content.textmedia.maxWInText = 1200
 
 /**
 * scriptmerger_constants.ts

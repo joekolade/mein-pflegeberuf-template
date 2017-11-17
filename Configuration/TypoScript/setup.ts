@@ -151,7 +151,7 @@ lib {
 				wrap = <ul class="list-unstyled">|</ul>
 
 				1 = TMENU
-				1 NO = 1
+				1.NO = 1
 				1.NO.wrapItemAndSub = <li>|</li>
 
 				1.ACT < .1.NO
