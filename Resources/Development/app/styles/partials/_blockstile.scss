@@ -1,11 +1,24 @@
-// Block stile
+// Text stile
+//
+
+.text {
+  &-primary {
+    // via bs
+  }
+  &-lighter {
+    color: $pflegebraun;
+  }
+}
+
+
+  // Block stile
 //
 
 @mixin blockstile {
   background: map_get($theme-colors, 'primary');
   color: white;
-  font-weight: bold;
-  padding: 0.25rem;
+  //font-weight: bold;
+  padding: $spacer/4 $spacer/2;
 }
 
 .block {

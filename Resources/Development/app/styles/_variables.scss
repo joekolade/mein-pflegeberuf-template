@@ -54,8 +54,7 @@ $colors: (
 );
 
 $pflegeblau: #00c5ff;
-//$pflegebraun: #9b9687; // #bfb8a6;
-$pflegebraun: #bfb8a6;
+$pflegebraun: #9b9687;
 
 $theme-colors: (
   primary: $pflegeblau,
@@ -85,14 +84,18 @@ $grid-breakpoints: (
 		xl: 1200px
 );
 
+$border-radius: 0;
 
-$h1-font-size: 2rem; //
-$h2-font-size: 1.375rem;
-$h3-font-size: 1.375rem;
-$h4-font-size: 1.2rem;
+$h1-font-size: 2rem; // 32px
+$h2-font-size: 1.375rem; // 22px
+$h3-font-size: 1.375rem; // 22px
+$h4-font-size: 1.375rem; // 22px
 $h5-font-size: 1.1rem;
 $h6-font-size: 1rem;
 
+$headings-font-weight: 300;
+
+$font-weight-base: 300;
 $font-size-base: 0.875rem; // 14px
 $font-size-base: 0.9375rem; // 15px
 

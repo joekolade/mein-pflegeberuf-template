@@ -8,7 +8,7 @@ $header-fsize: 1.2142857143 * $font-size-base; // 17px
 header.container {
   font-size: $header-fsize;
 
-  padding: $grid-gutter-width $grid-gutter-width/2;
+  padding: $grid-gutter-width/3 $grid-gutter-width/2;
 
   // Layout via grid
 
@@ -66,7 +66,7 @@ header.container {
 
     li {
       margin-left: $grid-gutter-width/2;
-      font-size: 0.8rem;
+      font-size: $font-size-base;
     }
   }
 
@@ -74,7 +74,7 @@ header.container {
     ul {
       justify-content: space-around;
       li {
-        font-size: 1rem;
+        font-size: $font-size-base * 1.1333333333; // 17px
         margin-left: 0;
       }
     }
