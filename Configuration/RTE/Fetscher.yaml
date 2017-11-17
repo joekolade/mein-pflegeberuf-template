@@ -2,12 +2,28 @@
 imports:
     - { resource: "EXT:rte_ckeditor/Configuration/RTE/Processing.yaml" }
     - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml" }
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml" }
 
 editor:
   config:
+    resize_enabled: true
+    resize_dir: 'both'
 
     # available block level elements
-    format_tags: "p;h1;h2;h3;h4"
+    format_tags: "p;h1;h2;h3;h4;h5"
+
+    # CSS stylesheet
+    contentsCss: ["EXT:rte_ckeditor/Resources/Public/Css/contents.css", "EXT:meinpflegeberuf/Resources/Public/Css/rte.css"]
+
+    stylesSet:
+      # block level styles
+      - { name: "Blockstyle 1", element: ['h1', 'h2', 'h3'], attributes: { 'class': "block-1" }}
+      - { name: "Blockstyle 2", element: ['h1', 'h2', 'h3', 'h4', 'h5'], attributes: { 'class': "block-2" }}
+      - { name: "Markierter block", element: ['p', 'h1', 'h2', 'h3', 'h4'], attributes: { 'class': "text-danger" }}
+      # Inline styles
+      - { name: "Grauer text", element: "span", attributes: { 'class': "text-lighter" }}
+      - { name: "Markierter text", element: "span", attributes: { 'class': "text-danger" }}
+
 
     # toolbar // use button configuration if needed
     # http://ckeditor.com/latest/samples/toolbarconfigurator/index.html#basic
@@ -26,39 +42,26 @@ editor:
 
     removeButtons: 'Save,NewPage,Preview,Print,Templates,Cut,Copy,Find,Replace,SelectAll,Form,Checkbox,Radio,TextField,Textarea,Select,Button,ImageButton,HiddenField,CreateDiv,BidiLtr,BidiRtl,Language,Image,Flash,PageBreak,Iframe,Smiley,Font,FontSize,About,TextColor,BGColor,Strike,Underline,Subscript,Superscript,CopyFormatting'
 
-    # remove buttons explicitly
-    # removeButtons:
-
-    # CSS stylesheet
-    #contentsCss: "EXT:befra_template/Resources/Public/Css/rte.css"
-    contentsCss: ["EXT:rte_ckeditor/Resources/Public/Css/contents.css", "EXT:meinpflegeberuf/Resources/Public/Css/rte.css"]
-
-
-
-    stylesSet:
-      # block level styles
-      - { name: "Blockstyle 1", element: "p", attributes: { class: 'block-1' } }
-      - { name: "Blockstyle 2", element: "p", attributes: { class: 'block-2' } }
-      - { name: "Markierter block", element: "p", attributes: { class: 'text-danger' } }
-      # Inline styles
-      - { name: "Markierter text", element: "span", attributes: { class: 'text-danger' } }
-
     # Plugin configuration
     removePlugins:
       - image
     extraPlugins:
-      - justify
-      - font
-      - find
-      - bidi
-      - colorbutton
-      - colordialog
+      #- justify
+      #- font
+      #- find
+      #- bidi
+      #- colorbutton
+      #- colordialog
     colorButton_colors:
       'CF5D4E,454545,FFF,CCC,DDD,CCEAEE,66AB16'
-    justifyClasses:
-      - align-left
-      - align-center
-      - align-right
-      - align-justify
+#    justifyClasses:
+#      - align-left
+#      - align-center
+#      - align-right
+#      - align-justify
   externalPlugins:
     typo3link: { resource: "EXT:rte_ckeditor/Resources/Public/JavaScript/Plugins/typo3link.js", route: "rteckeditor_wizard_browse_links" }
+
+processing:
+  allowTags:
+    - p

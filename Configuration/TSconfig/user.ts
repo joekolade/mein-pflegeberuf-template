@@ -15,7 +15,3 @@ options.pageTree.showNavTitle = 1
 # cache control
 # options.clearCache.all = 1
 # options.clearCache.pages = 1
-
-
-# Paste in RTE
-setup.override.rteCleanPasteBehaviour = pasteStructure

@@ -191,5 +191,6 @@ mod.web_layout.BackendLayouts {
 
 # Set Editor preferences
 RTE.default.preset = fetscher_preset
-RTE.config.tt_content.bodytext.preset = fetscher_preset
+#RTE.config.tt_content.bodytext.preset = fetscher_preset
+#RTE.config.tt_content.pi_flexforms.preset = fetscher_preset
 #RTE.config.tx_news_domain_model_news.bodytext.preset = default
