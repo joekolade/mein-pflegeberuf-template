@@ -1,0 +1,39 @@
+// Spacer
+//
+
+$spacer-heights: 0 10 20 40 60 80;
+
+@each $h in $spacer-heights {
+  .spacer-xs-#{$h} {
+      margin-top: #{$h}px;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+    @each $h in $spacer-heights {
+      .spacer-sm-#{$h} {
+          margin-top: #{$h}px;
+      }
+    }
+}
+@include media-breakpoint-up(md) {
+    @each $h in $spacer-heights {
+      .spacer-md-#{$h} {
+          margin-top: #{$h}px;
+      }
+    }
+}
+@include media-breakpoint-up(lg) {
+    @each $h in $spacer-heights {
+      .spacer-lg-#{$h} {
+          margin-top: #{$h}px;
+      }
+    }
+}
+@include media-breakpoint-up(xl) {
+    @each $h in $spacer-heights {
+      .spacer-xl-#{$h} {
+          margin-top: #{$h}px;
+      }
+    }
+}

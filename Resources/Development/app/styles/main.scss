@@ -27,6 +27,8 @@ $fa-font-path: "../Fonts/fontawesome-5.0.0/webfonts";
 @import "partials/js_gesture_menu";
 @import "partials/mobile_navi";
 
+@import "elements/spacer_mask";
+
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -39,6 +41,6 @@ body .container {
 	max-width: 62rem; // 992px
   }
   @include media-breakpoint-up(xl) {
-	max-width: 71.875rem; // 1150px
+	max-width: 75rem; // 1200px
   }
 }

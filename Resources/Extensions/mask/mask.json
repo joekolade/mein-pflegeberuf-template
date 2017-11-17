@@ -1,0 +1,275 @@
+{
+    "tt_content": {
+        "elements": {
+            "spacer": {
+                "label": "Spacer",
+                "key": "spacer",
+                "shortLabel": "",
+                "description": "F\u00fcgt einen konfigurierbaren Abstand ein",
+                "icon": "fa-arrows-v",
+                "color": "#3d5d57",
+                "columns": [
+                    "tx_mask_spacer_height_xs",
+                    "tx_mask_spacer_height_sm",
+                    "tx_mask_spacer_height_md",
+                    "tx_mask_spacer_height_lg",
+                    "tx_mask_spacer_height_xl"
+                ],
+                "labels": [
+                    "Basic Abstand",
+                    "Abstand SM (>= 576px)",
+                    "Abstand MD (>= 768px)",
+                    "Abstand LG (> 992px)",
+                    "Abstand XL (> 1200px)"
+                ]
+            }
+        },
+        "sql": {
+            "tx_mask_spacer_height_xs": {
+                "tt_content": {
+                    "tx_mask_spacer_height_xs": "tinytext"
+                }
+            },
+            "tx_mask_spacer_height_sm": {
+                "tt_content": {
+                    "tx_mask_spacer_height_sm": "tinytext"
+                }
+            },
+            "tx_mask_spacer_height_md": {
+                "tt_content": {
+                    "tx_mask_spacer_height_md": "tinytext"
+                }
+            },
+            "tx_mask_spacer_height_lg": {
+                "tt_content": {
+                    "tx_mask_spacer_height_lg": "tinytext"
+                }
+            },
+            "tx_mask_spacer_height_xl": {
+                "tt_content": {
+                    "tx_mask_spacer_height_xl": "tinytext"
+                }
+            }
+        },
+        "tca": {
+            "tx_mask_spacer_height_xs": {
+                "config": {
+                    "type": "select",
+                    "renderType": "selectSingle",
+                    "size": "",
+                    "items": [
+                        [
+                            "keiner",
+                            "0"
+                        ],
+                        [
+                            "10",
+                            "10"
+                        ],
+                        [
+                            "20",
+                            "20"
+                        ],
+                        [
+                            "40",
+                            "40"
+                        ],
+                        [
+                            "60",
+                            "60"
+                        ],
+                        [
+                            "80",
+                            "80"
+                        ]
+                    ],
+                    "foreign_table": "",
+                    "foreign_table_where": "",
+                    "fileFolder": "",
+                    "fileFolder_extList": "",
+                    "fileFolder_recursions": "",
+                    "maxitems": "",
+                    "autoSizeMax": ""
+                },
+                "exclude": "1",
+                "key": "spacer_height_xs"
+            },
+            "tx_mask_spacer_height_sm": {
+                "config": {
+                    "type": "select",
+                    "renderType": "selectSingle",
+                    "size": "",
+                    "items": [
+                        [
+                            "keiner",
+                            "0"
+                        ],
+                        [
+                            "10",
+                            "10"
+                        ],
+                        [
+                            "20",
+                            "20"
+                        ],
+                        [
+                            "40",
+                            "40"
+                        ],
+                        [
+                            "60",
+                            "60"
+                        ],
+                        [
+                            "80",
+                            "80"
+                        ]
+                    ],
+                    "foreign_table": "",
+                    "foreign_table_where": "",
+                    "fileFolder": "",
+                    "fileFolder_extList": "",
+                    "fileFolder_recursions": "",
+                    "maxitems": "",
+                    "autoSizeMax": ""
+                },
+                "exclude": "1",
+                "key": "spacer_height_sm"
+            },
+            "tx_mask_spacer_height_md": {
+                "config": {
+                    "type": "select",
+                    "renderType": "selectSingle",
+                    "size": "",
+                    "items": [
+                        [
+                            "keiner",
+                            "0"
+                        ],
+                        [
+                            "10",
+                            "10"
+                        ],
+                        [
+                            "20",
+                            "20"
+                        ],
+                        [
+                            "40",
+                            "40"
+                        ],
+                        [
+                            "60",
+                            "60"
+                        ],
+                        [
+                            "80",
+                            "80"
+                        ]
+                    ],
+                    "foreign_table": "",
+                    "foreign_table_where": "",
+                    "fileFolder": "",
+                    "fileFolder_extList": "",
+                    "fileFolder_recursions": "",
+                    "maxitems": "",
+                    "autoSizeMax": ""
+                },
+                "exclude": "1",
+                "key": "spacer_height_md"
+            },
+            "tx_mask_spacer_height_lg": {
+                "config": {
+                    "type": "select",
+                    "renderType": "selectSingle",
+                    "size": "",
+                    "items": [
+                        [
+                            "keiner",
+                            "0"
+                        ],
+                        [
+                            "10",
+                            "10"
+                        ],
+                        [
+                            "20",
+                            "20"
+                        ],
+                        [
+                            "40",
+                            "40"
+                        ],
+                        [
+                            "60",
+                            "60"
+                        ],
+                        [
+                            "80",
+                            "80"
+                        ]
+                    ],
+                    "foreign_table": "",
+                    "foreign_table_where": "",
+                    "fileFolder": "",
+                    "fileFolder_extList": "",
+                    "fileFolder_recursions": "",
+                    "maxitems": "",
+                    "autoSizeMax": ""
+                },
+                "exclude": "1",
+                "key": "spacer_height_lg"
+            },
+            "tx_mask_spacer_height_xl": {
+                "config": {
+                    "type": "select",
+                    "renderType": "selectSingle",
+                    "size": "",
+                    "items": [
+                        [
+                            "keiner",
+                            "0"
+                        ],
+                        [
+                            "10",
+                            "10"
+                        ],
+                        [
+                            "20",
+                            "20"
+                        ],
+                        [
+                            "40",
+                            "40"
+                        ],
+                        [
+                            "60",
+                            "60"
+                        ],
+                        [
+                            "80",
+                            "80"
+                        ]
+                    ],
+                    "foreign_table": "",
+                    "foreign_table_where": "",
+                    "fileFolder": "",
+                    "fileFolder_extList": "",
+                    "fileFolder_recursions": "",
+                    "maxitems": "",
+                    "autoSizeMax": ""
+                },
+                "exclude": "1",
+                "key": "spacer_height_xl"
+            }
+        }
+    },
+    "pages": {
+        "elements": [],
+        "sql": [],
+        "tca": []
+    },
+    "sys_file_reference": {
+        "sql": []
+    }
+}
