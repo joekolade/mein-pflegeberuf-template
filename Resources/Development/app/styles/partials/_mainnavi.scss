@@ -51,7 +51,11 @@ $subnav-bg-hover-color: darken($pflegebraun, 20%);
 	  padding: 0.75rem $spacer;
 	}
 
-	&:active > a,
+	&.active > a {
+	  color: map_get($theme-colors, primary);
+	  //background: darken($navbar-default-bg, 5%);
+	}
+	&:hover > a,
 	> a:hover {
 	  background-color: $navbar-first-hover-bg;
 	  color: $navbar-first-hover-color;
@@ -96,11 +100,14 @@ $subnav-bg-hover-color: darken($pflegebraun, 20%);
 		padding: 3px 4px;
 		padding-left: ($grid-gutter-width * 1.5);
 		color: $subnav-item-color;
+	  }
 
-		&:hover {
-		  background-color: $subnav-bg-hover-color;
-		  color: $subnav-hover-color;
-		}
+	  &.active > a {
+		color: map_get($theme-colors, primary);
+	  }
+	  a:hover {
+		background-color: $subnav-bg-hover-color;
+		color: $subnav-hover-color;
 	  }
 	}
 

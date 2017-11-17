@@ -35,10 +35,12 @@ header.container {
 
   .logo {
     grid-area: logo;
-    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 
     @include media-breakpoint-up(md) {
-      text-align: left;
+      justify-content: flex-start;
     }
   }
   .metaNavi{
@@ -63,7 +65,6 @@ header.container {
     list-style: none;
     justify-content: flex-end;
 
-
     li {
       margin-left: $grid-gutter-width/2;
       font-size: $font-size-base;
@@ -72,10 +73,10 @@ header.container {
 
   @include media-breakpoint-up(md) {
     ul {
-      justify-content: space-around;
+      //justify-content: space-around;
       li {
         font-size: $font-size-base * 1.1333333333; // 17px
-        margin-left: 0;
+        margin-left: $grid-gutter-width*2;
       }
     }
   }
