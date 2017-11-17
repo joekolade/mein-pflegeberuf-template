@@ -151,8 +151,8 @@ lib {
 				wrap = <ul class="list-unstyled">|</ul>
 
 				1 = TMENU
-				1.NO = 1
-				1.wrapItemAndSub = <li>|</li>
+				1 NO = 1
+				1.NO.wrapItemAndSub = <li>|</li>
 
 				1.ACT < .1.NO
 				1.ACT.wrapItemAndSub = <li class="active">|</li>
@@ -166,6 +166,7 @@ lib {
 			special.value = {$meinpflegeberuf.pageIds.socialNaviRoot}
 			wrap >
 			1.NO {
+				wrapItemAndSub = |
 				stdWrap.cObject = TEXT
 				stdWrap.cObject {
 					wrap = <i class="fab fa-|"></i>
