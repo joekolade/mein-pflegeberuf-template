@@ -15,19 +15,20 @@ $fa-font-path: "../Fonts/fontawesome-5.0.0/webfonts";
 
 // Partials
 @import "partials/mixins";
-
 @import "partials/header";
 @import "partials/mainnavi";
 @import "partials/content";
 @import "partials/footer";
 @import "partials/fonts";
-
 @import "partials/blockstile";
-
 @import "partials/js_gesture_menu";
 @import "partials/mobile_navi";
 
+// Elements
 @import "elements/spacer_mask";
+
+// Extensions
+@import "extensions/powermail";
 
 .browserupgrade {
   margin: 0.2em 0;

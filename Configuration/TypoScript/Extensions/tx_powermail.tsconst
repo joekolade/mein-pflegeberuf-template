@@ -4,7 +4,20 @@ plugin.tx_powermail.settings.main.optin = 0
 plugin.tx_powermail.settings.main.moresteps = 0
 plugin.tx_powermail.settings.misc.ajaxSubmit = 1
 
-plugin.tx_powermail.settings.styles.bootstrap.offsetClasses =
-plugin.tx_powermail.settings.styles.bootstrap.offsetClassesGeneral = col-sm-offset-2
-
 plugin.tx_powermail.view.partialRootPath = EXT:meinpflegeberuf/Resources/Extensions/powermail/Partials/
+
+plugin.tx_powermail.settings.styles.bootstrap {
+	numberOfColumns = 1
+	bootstrapPath = 1
+	offsetClasses = offset-sm-2
+	fieldAndLabelWrappingClasses = form-group row
+	labelClasses = col-2 col-form-label
+	rowClasses =
+	radioClasses = form-check
+	checkClasses = form-check
+}
+
+
+
+
+
