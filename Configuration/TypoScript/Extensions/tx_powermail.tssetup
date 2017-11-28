@@ -10,3 +10,22 @@ plugin.tx_powermail {
 [PIDinRootline = {$meinpflegeberuf.pageIds.contact}]
 plugin.tx_powermail.settings.setup.styles.framework.offsetClasses = {$plugin.tx_powermail.settings.styles.bootstrap.offsetClassesGeneral}
 [global]
+
+lib.powermail_select.types = CONTENT
+lib.powermail_select.types {
+    table = tx_nursing_domain_model_type
+    select.pidInList = 5
+    renderObj = COA
+    renderObj {
+        10 = TEXT
+        10.field = title
+
+        20 = TEXT
+        20.value = |
+
+        30 = TEXT
+        30.field = uid
+
+        stdWrap.wrap = |[\n]
+    }
+}

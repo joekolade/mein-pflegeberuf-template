@@ -8,8 +8,8 @@ tt_content.textmedia {
 			sourceCollection {
 				xl {
 					dataKey = extra-large
-					width = 1200
-					srcset = 1120w
+					width = 1170
+					srcset = 1100w
 				}
 
 				lg {
