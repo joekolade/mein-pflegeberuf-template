@@ -17,6 +17,7 @@ meinpflegeberuf {
 		#contact = 6
 	}
 
+
 	#quickformUid = 33
 }
 [hostname = meinpflegeberuf.local] || [globalString = IENV:HTTP_HOST = meinpflegeberuf.local]
@@ -36,7 +37,10 @@ styles.content.textmedia.maxWInText = 1200
 
 plugin.tx_scriptmerger.css.compress.enable = 0
 plugin.tx_scriptmerger.javascript.compress.enable = 0
-plugin.tx_scriptmerger.css.enable = 0
+
+plugin.tx_scriptmerger.css.enable = 1
+plugin.tx_scriptmerger.javascript.enable = 1
+plugin.tx_scriptmerger.javascript.body = 1
 
 /**
 * Activate lightbox
