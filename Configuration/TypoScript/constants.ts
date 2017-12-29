@@ -40,7 +40,7 @@ plugin.tx_scriptmerger.javascript.compress.enable = 0
 
 plugin.tx_scriptmerger.css.enable = 1
 plugin.tx_scriptmerger.javascript.enable = 1
-plugin.tx_scriptmerger.javascript.body = 1
+plugin.tx_scriptmerger.javascript.parseBody = 1
 
 /**
 * Activate lightbox
