@@ -1,0 +1,17 @@
+/**
+ * Activate lightbox w/ settings
+ *
+ */
+
+styles {
+	content {
+		textmedia {
+			linkWrap {
+				lightboxCssClass = sd-lightbox
+				lightboxRelAttribute = sd-lightbox[{field:uid}]
+				lightboxEnabled = 1
+			}
+
+		}
+	}
+}

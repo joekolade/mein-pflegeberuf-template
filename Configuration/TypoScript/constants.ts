@@ -43,12 +43,6 @@ plugin.tx_scriptmerger.javascript.enable = 1
 plugin.tx_scriptmerger.javascript.parseBody = 1
 
 /**
-* Activate lightbox
-*
-*/
-styles.content.textmedia.linkWrap.lightboxEnabled = 1
-
-/**
 * Fluid Styled Content
 *
 */
