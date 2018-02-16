@@ -37,7 +37,6 @@ $EM_CONF[$_EXTKEY] = [
             'sourceopt' => '',
             'scriptmerger' => '',
             'sd_lightbox' => '',
-
             'unroll' => '',
             'cookie_hint' => '',
             'fluid_styled_responsive_images' => '',
