@@ -1,5 +1,5 @@
 plugin.tx_csseo.sitemap.pages.rootPid = 2
 plugin.tx_csseo.social.defaultImage = EXT:meinpflegeberuf/Resources/Public/Images/logo-mein-pflegeberuf_social.png
 #plugin.tx_csseo.tracking.googleAnalytics = UA-111777296-1
-/* Joe Schäfer, Schäfer - Büro für Webentwicklung, joe(at)schafer-webentwicklung.de 16.02.18-15:14 */
+# Joe Schäfer, Schäfer - Büro für Webentwicklung, joe(at)schafer-webentwicklung.de 16.02.18-15:14
 plugin.tx_csseo.tracking.googleAnalytics = UA-114299011-1
