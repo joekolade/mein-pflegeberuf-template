@@ -1,3 +1,2 @@
 # make powermailcond work with scriptmerger
-page.3132.10.noTrimWrap = | data-ignore="1" data-condition-uri="|"|
 page.3132.wrap = <div id="powermail_conditions_container"|></div>
