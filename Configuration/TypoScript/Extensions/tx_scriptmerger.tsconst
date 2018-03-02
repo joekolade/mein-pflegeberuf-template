@@ -1,0 +1,24 @@
+// ext:scriptmerger
+//
+plugin.tx_scriptmerger.css.enable = 1
+plugin.tx_scriptmerger.css.compress.enable = 0
+
+plugin.tx_scriptmerger.javascript.enable = 1
+plugin.tx_scriptmerger.javascript.compress.enable = 0
+plugin.tx_scriptmerger.javascript.parseBody = 1
+
+plugin.tx_scriptmerger {
+	css {
+		minify {
+			ignore = \?,\.min\.,unpkg\.com
+		}
+
+		compress {
+			ignore = \?,unpkg\.com
+		}
+
+		merge {
+			ignore = \?,unpkg\.com
+		}
+	}
+}

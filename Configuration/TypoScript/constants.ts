@@ -31,18 +31,6 @@ styles.content.textmedia.maxW = 1200
 styles.content.textmedia.maxWInText = 1200
 
 /**
-* scriptmerger_constants.ts
-*
-*/
-
-plugin.tx_scriptmerger.css.compress.enable = 0
-plugin.tx_scriptmerger.javascript.compress.enable = 0
-
-plugin.tx_scriptmerger.css.enable = 1
-plugin.tx_scriptmerger.javascript.enable = 1
-plugin.tx_scriptmerger.javascript.parseBody = 1
-
-/**
 * Fluid Styled Content
 *
 */
