@@ -1,13 +1,40 @@
 {
-  "name": "development",
+  "name": "meinpflegeberuf",
   "private": true,
   "dependencies": {
-    "bootstrap": "~4.0.0",
-    "modernizr": "~2.8.1",
-    "hammer": ""
+    "jquery": ">=1.9.1",
+    "hammerjs": "hammer#^2.0.8",
+    "bootstrap": "v4.0.0",
+    "popper.js": "^1.11.0"
   },
   "devDependencies": {
     "chai": "^4.1.1",
     "mocha": "^3.5.0"
+  },
+  "authors": [
+    "Joekolade <joe@joekola.de>"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "overrides": {
+    "bootstrap": {
+    "main": [
+        "dist/js/bootstrap.js",
+        "dist/css/bootstrap.css",
+        "scss/boostrap.scss"
+      ]
+    },
+    "bootstrap-sass": {
+      "main": [
+        "assets/stylesheets/_bootstrap.scss",
+        "assets/fonts/bootstrap/*",
+        "assets/javascripts/bootstrap.js"
+      ]
+    }
   }
 }

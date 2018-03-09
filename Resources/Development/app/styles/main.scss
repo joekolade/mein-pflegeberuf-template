@@ -1,7 +1,11 @@
+
 @import "variables";
+
+
+@import "../../bower_components/bootstrap/scss/bootstrap.scss";
 // bower:scss
-@import "bower_components/bootstrap/scss/bootstrap.scss";
 // endbower
+
 
 // Font Awesome 5
 $fa-font-path: "../Fonts/fontawesome-5.0.0/webfonts";
@@ -13,22 +17,18 @@ $fa-font-path: "../Fonts/fontawesome-5.0.0/webfonts";
 @import "../fonts/fontawesome-5.0.0/scss/font-awesome-core";
 // end:fawesome5
 
+
 // Partials
 @import "partials/mixins";
+
 @import "partials/header";
 @import "partials/mainnavi";
 @import "partials/content";
 @import "partials/footer";
 @import "partials/fonts";
+
 @import "partials/blockstile";
-@import "partials/js_gesture_menu";
-@import "partials/mobile_navi";
 
-// Elements
-@import "elements/spacer_mask";
-
-// Extensions
-@import "extensions/powermail";
 
 .browserupgrade {
   margin: 0.2em 0;
@@ -37,11 +37,10 @@ $fa-font-path: "../Fonts/fontawesome-5.0.0/webfonts";
   padding: 0.2em 0;
 }
 
-body .container {
-  @include media-breakpoint-up(lg) {
-	max-width: 62rem; // 992px
-  }
-  @include media-breakpoint-up(xl) {
-	max-width: 75rem; // 1200px
+
+/* Responsive: Portrait tablets and up */
+@include media-breakpoint-up(lg){
+  .container {
+    max-width: 62rem; // 992px
   }
 }
