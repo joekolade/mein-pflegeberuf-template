@@ -41,3 +41,7 @@ page.headerData.654.100.20 {
 	wrap.splitChar = #
 	required = 1
 }
+
+# Kein GA
+# Joe Schäfer, Schäfer - Büro für Webentwicklung, joe(at)schafer-webentwicklung.de 18.05.18-11:04
+page.headerData.654.100 >

@@ -19,7 +19,7 @@ $EM_CONF[$_EXTKEY] = [
     'uploadfolder' => '0',
     'createDirs' => '',
     'clearCacheOnLoad' => 0,
-    'version' => '1.0.0-dev',
+    'version' => '1.0.1',
     'constraints' => [
         'depends' => [
             'typo3' => '8.7.0-8.7.99',
@@ -38,7 +38,6 @@ $EM_CONF[$_EXTKEY] = [
             'scriptmerger' => '',
             'sd_lightbox' => '',
             'unroll' => '',
-            'cookie_hint' => '',
             'fluid_styled_responsive_images' => '',
 
             // Sysextensions
@@ -47,6 +46,7 @@ $EM_CONF[$_EXTKEY] = [
         ],
         'conflicts' => [],
         'suggests' => [
+            'pxa_cookie_bar ' => '',
             'go_maps_ext' => '',
             'frontend_editing' => '',
             'lib_js_lazysizes' => '', // https://github.com/joekolade/lib_js_lazysizes
