@@ -28,7 +28,7 @@ page.meta {
 # kills jquery
 #config.moveJsFromHeaderToFooter = 1
 
-config.baseURL = http://{$meinpflegeberuf.site.domain}/
+config.baseURL = https://{$meinpflegeberuf.site.domain}/
 config.tx_realurl_enable = 1
 config.tx_frontend_editing = 0
 
