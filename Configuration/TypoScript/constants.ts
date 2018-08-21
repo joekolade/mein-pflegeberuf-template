@@ -15,6 +15,18 @@ meinpflegeberuf {
 
 		#quickform = 22
 		#contact = 6
+
+		home_de = 2
+		home_pl = 57
+	}
+
+	features {
+		use_lang_switch = 0
+	}
+
+	text {
+		de = deutsch
+		pl = polnisch
 	}
 
 

@@ -4,6 +4,11 @@ plugin.tx_powermail.settings.main.optin = 0
 plugin.tx_powermail.settings.main.moresteps = 0
 plugin.tx_powermail.settings.misc.ajaxSubmit = 1
 
+plugin.tx_powermail.settings.setup.misc.htmlForLabels = 1
+plugin.tx_powermail.settings.setup.misc.htmlForHtmlFields = 1
+plugin.tx_powermail.settings.misc.htmlForLabels = 1
+plugin.tx_powermail.settings.misc.htmlForHtmlFields = 1
+
 plugin.tx_powermail.view.partialRootPath = EXT:meinpflegeberuf/Resources/Extensions/powermail/Partials/
 
 plugin.tx_powermail.settings.styles.bootstrap {

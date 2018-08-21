@@ -28,7 +28,7 @@ page.meta {
 # kills jquery
 #config.moveJsFromHeaderToFooter = 1
 
-config.baseURL = https://{$meinpflegeberuf.site.domain}/
+config.baseURL = http://{$meinpflegeberuf.site.domain}/
 config.tx_realurl_enable = 1
 config.tx_frontend_editing = 0
 
@@ -161,20 +161,23 @@ lib {
 			}
 		}
 
-		socials < .meta.20
+		socials = COA
 		socials {
-			special.value = {$meinpflegeberuf.pageIds.socialNaviRoot}
-			wrap >
-			1.NO {
-				wrapItemAndSub = |
-				stdWrap.cObject = TEXT
-				stdWrap.cObject {
-					wrap = <i class="fab fa-|"></i>
-					field = title
-				}
+			10 < lib.meta.20
+			10 {
+				special.value = {$meinpflegeberuf.pageIds.socialNaviRoot}
+				wrap >
+				1.NO {
+					wrapItemAndSub = |
+					stdWrap.cObject = TEXT
+					stdWrap.cObject {
+						wrap = <i class="fab fa-|"></i>
+						field = title
+					}
 
-				#typolink.parameter.field = url
-				#typolink.extTarget.field = target
+					#typolink.parameter.field = url
+					#typolink.extTarget.field = target
+				}
 			}
 		}
 
@@ -222,6 +225,33 @@ lib {
 
 [treeLevel = 0]
 	lib.nav.breadcrumb >
+[global]
+
+/**
+* Features
+*/
+
+TEMP.langMenu = COA
+TEMP.langMenu {
+	10 = IMAGE
+	10 {
+		altText = {$meinpflegeberuf.text.de}
+		file = EXT:meinpflegeberuf/Resources/Public/Images/flag-germany.svg
+		file.width = 25
+		stdWrap.typolink.parameter = {$meinpflegeberuf.pageIds.home_de}
+		stdWrap.typolink.ATagParams = class="language"
+	}
+
+	20 < .10
+	20.Text= {$meinpflegeberuf.text.pl}
+	20.titleText = {$meinpflegeberuf.text.pl}
+	20.file = EXT:meinpflegeberuf/Resources/Public/Images/flag-poland.svg
+	20.stdWrap.typolink.parameter = {$meinpflegeberuf.pageIds.home_pl}
+
+}
+
+[globalVar = LIT:{$meinpflegeberuf.features.use_lang_switch} > 0]
+	lib.nav.socials.20 < TEMP.langMenu
 [global]
 
 /**

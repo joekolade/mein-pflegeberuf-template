@@ -23,10 +23,9 @@ body.menu--open {
   }
   .top {
 	text-align: left;
-	.logo-wrapper {
-	  float: right;
-	  text-align: right;
-	  padding-right: 1rem;
+	.logo {
+      width: 100%;
+      padding: $grid-gutter-width;
 	}
   }
 
@@ -34,7 +33,20 @@ body.menu--open {
 	margin-top: 1em;
 	ul {
 	  margin-bottom: 1em;
+      li {
+        padding: 0;
+        a {
+          border-bottom: 1px solid $border-color;
+        }
+      }
+      .submenu-toggle {
+        margin-top: 1px;
+      }
 	}
+
+    > .frame {
+      padding: 2.5rem 1rem 0.5rem;
+    }
   }
   p.header {
 	margin-bottom: 0;
