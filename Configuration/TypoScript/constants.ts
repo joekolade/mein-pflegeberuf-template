@@ -19,6 +19,9 @@ meinpflegeberuf {
 		home_de = 2
 		home_pl = 57
 	}
+	contentIds {
+		contact = 4
+	}
 
 	features {
 		use_lang_switch = 0

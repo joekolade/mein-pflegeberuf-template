@@ -127,18 +127,35 @@ lib {
 
 		}
 
-		mobile < .main
+		mobile = COA
 		mobile {
-			wrap = <ul class="nav flex-column">|</ul>
+			10 < lib.nav.main
+			10 {
+				wrap = <ul class="nav flex-column">|</ul>
 
-			1.NO.ATagParams = class="nav-link" rel="nofollow"
-			1.ACT.ATagParams = class="nav-link active" rel="nofollow"
-			1.CUR.ATagParams = class="nav-link active" rel="nofollow"
+				1.NO.ATagParams = class="nav-link" rel="nofollow"
+				1.ACT.ATagParams = class="nav-link active" rel="nofollow"
+				1.CUR.ATagParams = class="nav-link active" rel="nofollow"
 
-			2 < .1
-			2.wrap = <a class="btn btn-primary submenu-toggle"><i class="far fa-angle-down"></i></a><ul class="subnav">|</ul>
+				2 < .1
+				2.wrap = <a class="btn btn-primary submenu-toggle"><i class="far fa-angle-down"></i></a><ul class="subnav">|</ul>
 
-			3 < .2
+				3 < .2
+			}
+			20 = CONTENT
+			20 {
+				table = tt_content
+				select {
+					pidInList = {$meinpflegeberuf.pageIds.root}
+					uidInList = {$meinpflegeberuf.contentIds.contact}
+				}
+			}
+			/*
+			colPos =
+
+			data[tt_content][4][tx_gridelements_columns]
+			101
+			*/
 		}
 
 		meta = COA
