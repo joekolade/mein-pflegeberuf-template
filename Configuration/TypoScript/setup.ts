@@ -200,7 +200,7 @@ lib {
 
 		breadcrumb = COA
 		breadcrumb {
-			wrap = <ol class="breadcrumb">|</ol>
+			wrap = <ol class="breadcrumb d-none d-sm-block">|</ol>
 			10 = HMENU
 			10 {
 				special = rootline
