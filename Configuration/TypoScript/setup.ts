@@ -132,39 +132,7 @@ lib {
 			typolink.parameter = {$meinpflegeberuf.pageIds.stellenList}
 			typolink.ATagParams = class="navbar-text d-md-none"
 			value = Stellenangebote
-			stdWrap.wrap = | <i class="far fa-search"></i>
-		}
-
-
-		mobile = COA
-		mobile {
-			10 < lib.nav.main
-			10 {
-				wrap = <ul class="nav flex-column">|</ul>
-
-				1.NO.ATagParams = class="nav-link" rel="nofollow"
-				1.ACT.ATagParams = class="nav-link active" rel="nofollow"
-				1.CUR.ATagParams = class="nav-link active" rel="nofollow"
-
-				2 < .1
-				2.wrap = <a class="btn btn-primary submenu-toggle"><i class="far fa-angle-down"></i></a><ul class="subnav">|</ul>
-
-				3 < .2
-			}
-			20 = CONTENT
-			20 {
-				table = tt_content
-				select {
-					pidInList = {$meinpflegeberuf.pageIds.root}
-					uidInList = {$meinpflegeberuf.contentIds.contact}
-				}
-			}
-			/*
-			colPos =
-
-			data[tt_content][4][tx_gridelements_columns]
-			101
-			*/
+			stdWrap.noTrimWrap = ||  <i class="far fa-search"></i>|
 		}
 
 		meta = COA
@@ -206,6 +174,40 @@ lib {
 				}
 			}
 		}
+
+        mobile = COA
+        mobile {
+            10 < lib.nav.main
+            10 {
+                wrap = <ul class="nav flex-column">|</ul>
+
+                1.NO.ATagParams = class="nav-link" rel="nofollow"
+                1.ACT.ATagParams = class="nav-link active" rel="nofollow"
+                1.CUR.ATagParams = class="nav-link active" rel="nofollow"
+
+                2 < .1
+                2.wrap = <a class="btn btn-primary submenu-toggle"><i class="far fa-angle-down"></i></a><ul class="subnav">|</ul>
+
+                3 < .2
+            }
+
+            # Flags
+            20 >
+
+            30 = CONTENT
+            30 {
+                table = tt_content
+                select {
+                    pidInList = {$meinpflegeberuf.pageIds.root}
+                    uidInList = {$meinpflegeberuf.contentIds.contact}
+                }
+            }
+
+            #40 < lib.navi.socials
+
+            50 < lib.nav.meta
+			50.stdWrap.wrap = <nav class="frame meta">|</nav>
+        }
 
 		breadcrumb = COA
 		breadcrumb {
@@ -278,6 +280,8 @@ TEMP.langMenu {
 
 [globalVar = LIT:{$meinpflegeberuf.features.use_lang_switch} > 0]
 	lib.nav.socials.20 < TEMP.langMenu
+	lib.nav.mobile.20 < TEMP.langMenu
+	lib.nav.mobile.20.stdWrap.wrap = <nav class="lang frame">|</nav>
 [global]
 
 /**

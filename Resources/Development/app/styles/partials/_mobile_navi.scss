@@ -43,4 +43,16 @@
 	  max-height: 600px;
 	}
   }
+
+	.meta,
+	.lang {
+		padding: .5rem 1rem .5rem;
+	}
+
+	.lang {
+		a {
+			display: inline-block;
+			margin-right: 1em;
+		}
+	}
 }

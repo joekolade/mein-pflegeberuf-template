@@ -92,7 +92,7 @@ header.container {
     margin: 0 $flag-width/2;
 
     &.language {
-      display: block;
+      display: none;
       width: $flag-width;
     }
   }
@@ -103,6 +103,10 @@ header.container {
   @include media-breakpoint-up(md) {
     a {
       margin-left: $grid-gutter-width/2;
+
+      &.language {
+        display: block;
+      }
     }
   }
 }
@@ -125,6 +129,8 @@ header.container {
     -ms-grid-column-span: 3;
     grid-row-start: 1;
     grid-row-end: 2;
+
+    display: none;
   }
 
   .socials {
@@ -152,6 +158,8 @@ header.container {
       -ms-grid-column-span: 2;
       grid-row-start: 1;
       grid-row-end: 2;
+
+      display: block;
     }
 
     .socials {

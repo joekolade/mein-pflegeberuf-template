@@ -14,7 +14,7 @@ body.menu--open {
   top: 44px;
   width: 0;
   height: 0;
-  z-index: 150;
+  z-index: 450;
   @media screen and (min-width: 64em) {
 	display: none;
   }
