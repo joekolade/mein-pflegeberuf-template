@@ -18,6 +18,8 @@ meinpflegeberuf {
 
 		home_de = 2
 		home_pl = 57
+
+		stellenList = 33
 	}
 	contentIds {
 		contact = 4

@@ -127,6 +127,15 @@ lib {
 
 		}
 
+		quicklink = TEXT
+		quicklink {
+			typolink.parameter = {$meinpflegeberuf.pageIds.stellenList}
+			typolink.ATagParams = class="navbar-text d-md-none"
+			value = Stellenangebote
+			stdWrap.wrap = | <i class="far fa-search"></i>
+		}
+
+
 		mobile = COA
 		mobile {
 			10 < lib.nav.main

@@ -1,9 +1,12 @@
 <nav class="navbar navbar-expand-md">
 	<button class="menu-toggle btn btn-light" type="button" aria-expanded="false" aria-label="Toggle navigation">
-		<i class="far fa-bars"></i> &nbsp; &nbsp; Navigation
+		<i class="far fa-bars"></i> <span class="sr-only">Navigation</span>
 	</button>
+
+	<f:cObject typoscriptObjectPath="lib.nav.quicklink"></f:cObject>
 
 	<div class="collapse navbar-collapse" id="nav-content">
 		<f:cObject typoscriptObjectPath="lib.nav.main"></f:cObject>
 	</div>
+
 </nav>
