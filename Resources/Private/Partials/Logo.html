@@ -1,5 +1,12 @@
 <div class="logo">
 	<f:link.page pageUid="{pageIds_root}">
-		<f:render partial="LogoFile"></f:render>
+		<f:if condition="{logoFile}">
+			<f:then>
+				{logoFile -> f:format.raw()}
+			</f:then>
+			<f:else>
+				<f:render partial="LogoFile"></f:render>
+			</f:else>
+		</f:if>
 	</f:link.page>
 </div>
