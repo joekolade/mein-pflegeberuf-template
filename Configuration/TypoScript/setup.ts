@@ -91,6 +91,11 @@ page.10.variables {
 
 	pageIds_root = TEXT
 	pageIds_root.value = {$meinpflegeberuf.pageIds.root}
+
+	features_use_quicklink = TEXT
+	features_use_quicklink.value = {$meinpflegeberuf.features.use_quicklink}
+	features_use_lang_switch = TEXT
+	features_use_lang_switch.value = {$meinpflegeberuf.features.use_lang_switch}
 }
 
 /**
@@ -131,7 +136,7 @@ lib {
 		quicklink {
 			typolink.parameter = {$meinpflegeberuf.pageIds.stellenList}
 			typolink.ATagParams = class="navbar-text d-md-none"
-			value = Stellenangebote
+			value = {$meinpflegeberuf.text.stellenangebote}
 			stdWrap.noTrimWrap = ||  <i class="far fa-search"></i>|
 		}
 
@@ -206,7 +211,7 @@ lib {
             #40 < lib.navi.socials
 
             50 < lib.nav.meta
-			50.stdWrap.wrap = <nav class="frame meta">|</nav>
+			50.stdWrap.wrap = <nav class="frame metastellenList">|</nav>
         }
 
 		breadcrumb = COA

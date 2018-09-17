@@ -21,7 +21,8 @@
         "schnitzler/fluid-styled-responsive-images": "^8.7.0",
         "instituteweb/unroll": "^2.0",
         "gridelementsteam/gridelements": "dev-master",
-        "laxap/bootstrap-grids": "^1.4"
+        "laxap/bootstrap-grids": "^1.4",
+        "rlmp/rlmp-language-detection": "^8.0"
     },
     "autoload": {
         "psr-4": {

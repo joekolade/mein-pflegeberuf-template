@@ -19,19 +19,22 @@ meinpflegeberuf {
 		home_de = 2
 		home_pl = 57
 
-		stellenList = 33
+		stellenList =
 	}
 	contentIds {
 		contact = 4
 	}
 
 	features {
+		use_quicklink = 0
 		use_lang_switch = 0
 	}
 
 	text {
 		de = deutsch
 		pl = polnisch
+
+		stellenangebote = Stellenangebote
 	}
 
 

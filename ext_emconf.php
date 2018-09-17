@@ -39,6 +39,7 @@ $EM_CONF[$_EXTKEY] = [
             'sd_lightbox' => '',
             'unroll' => '',
             'fluid_styled_responsive_images' => '',
+            'rlmp_language_detection' => '',
 
             // Sysextensions
             'opendocs' => '',
