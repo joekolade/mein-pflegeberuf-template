@@ -20,7 +20,7 @@
         "sgalinski/scriptmerger": "^5.0",
         "schnitzler/fluid-styled-responsive-images": "^8.7.0",
         "instituteweb/unroll": "^2.0",
-        "gridelementsteam/gridelements": "dev-master",
+        "gridelementsteam/gridelements": "^8.2",
         "laxap/bootstrap-grids": "^1.4",
         "rlmp/rlmp-language-detection": "^8.0"
     },
