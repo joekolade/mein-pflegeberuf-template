@@ -40,6 +40,7 @@ $EM_CONF[$_EXTKEY] = [
             'unroll' => '',
             'fluid_styled_responsive_images' => '',
             'rlmp_language_detection' => '',
+            'visibility' => '',
 
             // Sysextensions
             'opendocs' => '',
