@@ -23,7 +23,7 @@
         "gridelementsteam/gridelements": "^8.2",
         "laxap/bootstrap-grids": "^1.4",
         "rlmp/rlmp-language-detection": "^8.0",
-        "joekolade/visibility": "^0.1"
+        "joekolade/visibility": "^1.1"
     },
     "autoload": {
         "psr-4": {
