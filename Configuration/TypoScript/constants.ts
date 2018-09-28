@@ -16,8 +16,10 @@ meinpflegeberuf {
 		#quickform = 22
 		#contact = 6
 
+        # DE version root page
 		home_de = 2
-		home_pl = 57
+		# Other languages home
+		home_en = 118
 
 		stellenList =
 	}

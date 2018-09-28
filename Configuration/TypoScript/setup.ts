@@ -83,8 +83,8 @@ page.10.variables {
 	hasStage = TEXT
 	hasStage.value = 1
 
-	logoFile = FILE
-	logoFile.file = {$meinpflegeberuf.site.logoFile}
+	logoFile = TEXT
+	logoFile.value = {$meinpflegeberuf.site.logoFile}
 
 	sitename = TEXT
 	sitename.value = {$meinpflegeberuf.site.name}
@@ -263,7 +263,7 @@ lib {
 /**
 * Features
 */
-
+/* Auskommentiert 20.9. christian
 TEMP.langMenu = COA
 TEMP.langMenu {
 	10 = IMAGE
@@ -288,6 +288,7 @@ TEMP.langMenu {
 	lib.nav.mobile.20 < TEMP.langMenu
 	lib.nav.mobile.20.stdWrap.wrap = <nav class="lang frame">|</nav>
 [global]
+*/
 
 /**
 * Header w/ tags

@@ -1,8 +1,8 @@
 <div class="logo">
-	<f:link.page pageUid="{pageIds_root}">
+	<f:link.page pageUid="{pageIds_root}" absolute="1">
 		<f:if condition="{logoFile}">
 			<f:then>
-				{logoFile -> f:format.raw()}
+				<img src="{logoFile}" alt="Logo" />
 			</f:then>
 			<f:else>
 				<f:render partial="LogoFile"></f:render>
