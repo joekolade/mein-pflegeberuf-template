@@ -1,0 +1,4 @@
+// Add visibility to bootstrap grids
+lib.gridelements.defaultGridSetup {
+    dataWrap = <div class="visibility" data-tx_visibility="{field:visibilityxs} {field:visibilitysm} {field:visibilitymd} {field:visibilitylg}">|</div>
+}

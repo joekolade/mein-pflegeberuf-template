@@ -42,7 +42,7 @@ $EM_CONF[$_EXTKEY] = [
             'rlmp_language_detection' => '',
             'visibility' => '',
 
-            // Sysextensions
+            // Sysextensions.
             'opendocs' => '',
             'recycler' => '',
         ],
