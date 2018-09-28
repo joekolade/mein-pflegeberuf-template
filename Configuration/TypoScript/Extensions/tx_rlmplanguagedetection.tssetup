@@ -1,0 +1,28 @@
+plugin.tx_rlmplanguagedetection_pi1 {
+    useOneTreeMethod = 1
+    defaultLang = de
+
+    # use -1 when you wont to test redirect, after change to 0
+    cookieLifetime = -1
+    #testOrder = browser,ip
+
+    # we can config aliases like "code = lang1, lang2"
+    useLanguageAliases = 1
+    languageAliases {
+        de = de
+        ro = ro
+        pl = pl
+    }
+    countryCodeToLanguageCode {
+        at = de
+        ch = de
+    }
+
+    #this just limit input params array
+    limitToLanguages = de,pl,ro
+
+    dieAtEnd = 0
+    dontBreakIfLanguageIsAlreadySelected = 0
+}
+
+page.987 =< plugin.tx_rlmplanguagedetection_pi1

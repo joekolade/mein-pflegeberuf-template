@@ -60,11 +60,15 @@ styles.templates.layoutRootPath = EXT:meinpflegeberuf/Resources/Extensions/fsc/L
 styles.templates.templateRootPath = EXT:meinpflegeberuf/Resources/Extensions/fsc/Templates/
 styles.templates.partialRootPath = EXT:meinpflegeberuf/Resources/Extensions/fsc/Partials/
 
+# Gridelements
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:gridelements/Configuration/TypoScript/constants.ts">
+
+# RLMP Languagedetection
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:rlmp_language_detection/Configuration/TypoScript/constants.txt">
+
 /**
 * Includes
 *
 */
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:meinpflegeberuf/Configuration/TypoScript/Constants/" extension="ts">
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:meinpflegeberuf/Configuration/TypoScript/Extensions/" extension="tsconst">
-# Gridelements
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:gridelements/Configuration/TypoScript/constants.ts">
