@@ -1,11 +1,12 @@
 # Fix cs_seo
 
-### Google Analytics ###
-page.headerData.654.100 >
-page.headerData.654.100 = COA
-page.headerData.654.100.10 = TEXT
-page.headerData.654.100.10 {
-	value = {$plugin.tx_csseo.tracking.googleAnalytics}
+### GTM by hand ###
+page.headerData.1666 = COA
+page.headerData.1666.100 = COA
+page.headerData.1666.100.5 = TEXT
+page.headerData.1666.100.10 = TEXT
+page.headerData.1666.100.10 {
+	value = {$plugin.tx_csseo.tracking.googleTagManager}
 	wrap (
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script data-ignore="1" async src="https://www.googletagmanager.com/gtag/js?id=#"></script>
@@ -13,8 +14,8 @@ page.headerData.654.100.10 {
 	wrap.splitChar = #
 	required = 1
 }
-page.headerData.654.100.20 < page.headerData.654.100.10
-page.headerData.654.100.20 {
+page.headerData.1666.100.20 < page.headerData.1666.100.10
+page.headerData.1666.100.20 {
 	wrap (
 <script data-ignore="1">
     /* Google Analytics Optout */
@@ -29,13 +30,10 @@ page.headerData.654.100.20 {
         window[disableStr] = true;
     }
 
-     /* Google Analytics */
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-
-	gtag('config', gaProperty, { 'anonymize_ip': true });
-    /* End Google Analytics */
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', gaProperty, { 'anonymize_ip': true });
 </script>
 	)
 	wrap.splitChar = #
@@ -44,4 +42,4 @@ page.headerData.654.100.20 {
 
 # Kein GA
 # Joe Schäfer, Schäfer - Büro für Webentwicklung, joe(at)schafer-webentwicklung.de 18.05.18-11:04
-page.headerData.654.100 >
+#page.headerData.1666.100 >
