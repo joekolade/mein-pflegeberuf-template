@@ -1,3 +1,11 @@
 plugin.tx_csseo.sitemap.pages.rootPid = 2
 plugin.tx_csseo.social.defaultImage = EXT:meinpflegeberuf/Resources/Public/Images/logo-mein-pflegeberuf_social.png
 #plugin.tx_csseo.tracking.googleAnalytics = UA-111777296-1
+
+# GTM for pflegeberuf
+plugin.tx_csseo.tracking.googleTagManager = UA-111777296-1
+
+[PIDinRootline = 118]
+# GTM for carejob
+plugin.tx_csseo.tracking.googleTagManager = UA-111777296-2
+[global]
