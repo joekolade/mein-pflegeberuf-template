@@ -228,6 +228,7 @@ lib {
 				}
 			}
 		}
+		breadcrumb >
 	}
 
 	contentStage < lib.content_get
