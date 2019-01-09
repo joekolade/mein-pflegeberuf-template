@@ -40,14 +40,10 @@ page.includeCSS {
 
 	print = EXT:meinpflegeberuf/Resources/Public/Css/print.css
 	print.media = print
-}
 
-// Typekit
-page.headerData.333 = TEXT
-page.headerData.333.value (
-<script src="https://use.typekit.net/vja5ysq.js"></script>
-<script>try{Typekit.load({ async: true });}catch(e){}</script>
-)
+	googlefont = https://fonts.googleapis.com/css?family=Signika:300,600
+	googlefont.external = 1
+}
 
 page.includeJS.modernizr = EXT:meinpflegeberuf/Resources/Public/JavaScripts/vendor/modernizr.js
 page.includeJS.vendor = EXT:meinpflegeberuf/Resources/Public/JavaScripts/vendor.js
@@ -139,6 +135,7 @@ lib {
 			value = {$meinpflegeberuf.text.stellenangebote}
 			stdWrap.noTrimWrap = ||  <i class="far fa-search"></i>|
 		}
+		quicklink >
 
 		meta = COA
 		meta {
