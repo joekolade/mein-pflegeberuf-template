@@ -59,8 +59,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         currentX = evt.touches[0].pageX;
         currentY = evt.touches[0].pageY;
-        const translateX = currentX - startX; // distance moved in the x axis
-        const translateY = currentY - startY; // distance moved in the y axis
+        var translateX = currentX - startX; // distance moved in the x axis
+        var translateY = currentY - startY; // distance moved in the y axis
 
         touchMove(evt, currentX, currentY, translateX, translateY);
     }
@@ -71,10 +71,10 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
 
         touchingElement = false;
-        const translateX = currentX - startX; // distance moved in the x axis
-        const translateY = currentY - startY; // distance moved in the y axis
+        var translateX = currentX - startX; // distance moved in the x axis
+        var translateY = currentY - startY; // distance moved in the y axis
 
-        const timeTaken = (new Date().getTime() - startTime);
+        var timeTaken = (new Date().getTime() - startTime);
 
         touchEnd(currentX, currentY, translateX, translateY, timeTaken);
     }

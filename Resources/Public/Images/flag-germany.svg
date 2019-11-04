@@ -1,1 +1,12 @@
-<svg id="Ebene_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 499.7 334"><style>.st0{fill:#f00000}.st1{fill:#f7da00}</style><path class="st0" d="M0 111.3h499.7v111.4H0V111.3z"/><path d="M0 0h499.7v111.3H0V0z"/><path class="st1" d="M0 222.7h499.7V334H0V222.7z"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 499.7 334" style="enable-background:new 0 0 499.7 334;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#F00000;}
+	.st1{fill:#F7DA00;}
+</style>
+<polygon class="st0" points="0,111.3 499.7,111.3 499.7,222.7 0,222.7 0,111.3 "/>
+<polygon points="0,0 499.7,0 499.7,111.3 0,111.3 0,0 "/>
+<polygon class="st1" points="0,222.7 499.7,222.7 499.7,334 0,334 0,222.7 "/>
+</svg>

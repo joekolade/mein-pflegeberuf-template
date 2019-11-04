@@ -55,6 +55,7 @@ $colors: (
 
 $pflegeblau: #00c5ff;
 $pflegebraun: #9b9687;
+$turq: #266c80;
 
 $theme-colors: (
   primary: $pflegeblau,
@@ -67,10 +68,11 @@ $theme-colors: (
   dark: $gray-900,
   blue: $pflegeblau,
   brown: $pflegebraun,
+  turquoise: $turq
 );
 
 //$body-color: #444;
-$body-color: #555555;
+$body-color: #333;
 $link-color: $body-color;
 
 // Sizes
@@ -86,17 +88,24 @@ $grid-breakpoints: (
 $border-radius: 0;
 $spacer: 1rem;
 
-$h1-font-size: 2rem; // 32px
-$h2-font-size: 1.375rem; // 22px
-$h3-font-size: 1.375rem; // 22px
-$h4-font-size: 1.375rem; // 22px
+//$h1-font-size: 2rem; // 32px
+//$h2-font-size: 1.375rem; // 22px
+//$h3-font-size: 1.375rem; // 22px
+//$h4-font-size: 1.375rem; // 22px
+//$h5-font-size: 1.1rem;
+//$h6-font-size: 1rem;
+
+$h1-font-size: 2.33333rem; // 35px
+$h2-font-size: 1.8rem; // 27px
+$h3-font-size: 1.33333rem; // 20px
+$h4-font-size: 1.2rem; // 18px
 $h5-font-size: 1.1rem;
 $h6-font-size: 1rem;
 
 $headings-font-weight: 300;
 
 $font-weight-base: 300;
-$font-size-base: 0.875rem; // 14px
+//$font-size-base: 0.875rem; // 14px
 $font-size-base: 0.9375rem; // 15px
 
 $font-weight-bold: 700;
