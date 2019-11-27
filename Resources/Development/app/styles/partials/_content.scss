@@ -11,7 +11,7 @@ h1, .h1 {
   margin-bottom: 0.7rem;
 }
 h2, .h2 {
-  color: map_get($theme-colors, 'primary');
+  //color: map_get($theme-colors, 'primary');
 }
 
 .ce-gallery img {
@@ -29,4 +29,13 @@ footer {
 
 b,strong {
   font-weight: $font-weight-bold;
+}
+
+// grids
+.col-md-4,
+.col-md-8  {
+  .col-sm-9 {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
 }

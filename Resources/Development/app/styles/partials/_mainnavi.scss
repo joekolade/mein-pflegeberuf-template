@@ -1,4 +1,3 @@
-
 // Main navi
 //
 
@@ -20,6 +19,9 @@ $subnav-bg-hover-color: darken($pflegebraun, 20%);
 //
 // Navigation styles
 //
+.navbar-container {
+  background: $navbar-default-bg;
+}
 
 .navbar {
 
@@ -32,124 +34,133 @@ $subnav-bg-hover-color: darken($pflegebraun, 20%);
   z-index: 20;
   border-width: 1px 0;
 
-  li {
-	min-width: $item-min-width - 40px;
-	position: relative;
+  .menu-toggle {
+    background: $navbar-default-bg;
+    border: none;
+    margin-left: -14px;
+  }
 
-	a {
-	  background-color: $navbar-default-bg;
-	  color: $navbar-default-link-color;
-	}
+  li {
+    min-width: $item-min-width - 40px;
+    position: relative;
+
+    a {
+      background-color: $navbar-default-bg;
+      color: $navbar-default-link-color;
+    }
 
   }
 
   // First level
   ul.navbar-nav > li {
 
-	> a.nav-link {
-	  padding: ($spacer / 2) $spacer;
-	  padding: 0.75rem $spacer;
-	}
+    > a.nav-link {
+      padding: ($spacer / 2) $spacer;
+      padding: 0.75rem $spacer;
+    }
 
-	&.active > a {
-	  color: map_get($theme-colors, primary);
-	  //background: darken($navbar-default-bg, 5%);
-	}
-	&:hover > a,
-	> a:hover {
-	  background-color: $navbar-first-hover-bg;
-	  color: $navbar-first-hover-color;
-	}
+    &.active > a {
+      color: map_get($theme-colors, primary);
+      //background: darken($navbar-default-bg, 5%);
+    }
+
+    &:hover > a,
+    > a:hover {
+      background-color: $navbar-first-hover-bg;
+      color: $navbar-first-hover-color;
+    }
   }
 
   .subnav {
-	z-index: 21;
-	max-height: 0;
-	overflow: hidden;
-	list-style: none;
-	margin: 0;
-	padding: 0;
+    z-index: 21;
+    max-height: 0;
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 
-	min-width: 100%;
-	max-width: 135%;
-	transition: max-height 0.3s linear;
+    min-width: 100%;
+    max-width: 135%;
+    transition: max-height 0.3s linear;
 
-	background-color: none;
+    background-color: transparent;
 
-	.subnav {
-	  z-index: 22;
-	  top: 0;
-	  left: 100%;
-	  padding-left: 1px;
-	  a {
-		padding-left: ($grid-gutter-width * 3);
-	  }
-	}
+    .subnav {
+      z-index: 22;
+      top: 0;
+      left: 100%;
+      padding-left: 1px;
 
-	li {
-	  margin: 0;
-	  padding: 0;
-	  padding-top: 1px;
-	  min-width: $item-min-width - 40px;
+      a {
+        padding-left: ($grid-gutter-width * 3);
+      }
+    }
 
-	  a {
-	  	background-color: $subnav-bg-color;
-		display: block;
-		// padding: 11px 15px 12px;
-		//font-size: 0.7em;
-		padding: 3px 4px;
-		padding-left: ($grid-gutter-width * 1.5);
-		color: $subnav-item-color;
-	  }
+    li {
+      margin: 0;
+      padding: 0;
+      padding-top: 1px;
+      min-width: $item-min-width - 40px;
 
-	  &.active > a {
-		color: map_get($theme-colors, primary);
-	  }
-	  a:hover {
-		background-color: $subnav-bg-hover-color;
-		color: $subnav-hover-color;
-	  }
-	}
+      a {
+        background-color: $subnav-bg-color;
+        display: block;
+        // padding: 11px 15px 12px;
+        //font-size: 0.7em;
+        padding: 3px 4px;
+        padding-left: ($grid-gutter-width * 1.5);
+        color: $subnav-item-color;
+      }
 
-	&.open {
-	  max-height: 999px;
+      &.active > a {
+        color: map_get($theme-colors, primary);
+      }
 
-	  > li > a {
-		background: $navbar-default-link-hover-bg;
-	  }
-	}
+      a:hover {
+        background-color: $subnav-bg-hover-color;
+        color: $subnav-hover-color;
+      }
+    }
+
+    &.open {
+      max-height: 999px;
+
+      > li > a {
+        background: $navbar-default-link-hover-bg;
+      }
+    }
   }
 
   @include media-breakpoint-up(md) {
-	.menu-toggle {
-	  display: none;
-	}
+    .menu-toggle {
+      display: none;
+    }
   }
   /* Responsive: Portrait tablets and up */
   @media screen and (min-width: 768px) {
-	ul {
-	  position: relative;
+    ul {
+      position: relative;
 
-	  li {
+      li {
 
-		&:hover > .subnav {
-		  max-height: 999px;
-		  overflow: visible;
-		}
-	  }
-	}
-	.subnav {
-	  position: absolute;
-	  padding-left: 0;
+        &:hover > .subnav {
+          max-height: 999px;
+          overflow: visible;
+        }
+      }
+    }
+    .subnav {
+      position: absolute;
+      padding-left: 0;
 
-	  .subnav {
-		padding-left: 1px;
-	  }
+      .subnav {
+        padding-left: 1px;
+      }
 
-	  .subnav li > a,
-	  li > a {
-		padding: 11px 15px 12px;
-	  }
-	}
+      .subnav li > a,
+      li > a {
+        padding: 11px 15px 12px;
+      }
+    }
   }
 }

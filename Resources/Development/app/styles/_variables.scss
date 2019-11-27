@@ -56,19 +56,23 @@ $colors: (
 $pflegeblau: #00c5ff;
 $pflegebraun: #9b9687;
 $turq: #266c80;
+$rot: #D60000;
+$orange: #FF8000;
 
 $theme-colors: (
   primary: $pflegeblau,
   secondary: $gray-700,
   success: $green,
   info: $cyan,
-  warning: $yellow,
+  warning: $orange,
   danger: $red,
   light: $gray-100,
   dark: $gray-900,
   blue: $pflegeblau,
   brown: $pflegebraun,
-  turquoise: $turq
+  turquoise: $turq,
+  rot: $rot,
+  orange: $orange
 );
 
 //$body-color: #444;

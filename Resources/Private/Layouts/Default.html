@@ -11,24 +11,30 @@
 
 	</header>
 
-	<div class="container">
+  <div class="navbar-container">
+    <div class="container">
 
-		<f:render partial="Navigation/Main" arguments="{_all}"></f:render>
+      <f:render partial="Navigation/Main" arguments="{_all}"></f:render>
 
+    </div>
 	</div>
 
 
+	<div class="stage-container container-fluid">
+    <div class="container">
+      <f:render section="stage"></f:render>
+    </div>
+  </div>
 	<div class="container">
-
-		<f:render section="stage"></f:render>
-
 		<f:render partial="Navigation/Breadcrumb"></f:render>
 
 		<f:render section="main"></f:render>
 
 	</div>
 
-	<footer class="container">
-		<f:render partial="Footer"></f:render>
+	<footer>
+    <div class="container">
+		  <f:render partial="Footer"></f:render>
+    </div>
 	</footer>
 </div>

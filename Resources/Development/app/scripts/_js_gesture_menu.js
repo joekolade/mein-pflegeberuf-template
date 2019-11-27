@@ -38,7 +38,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
         overlay.addEventListener('click', closeMenuOverlay, false); // I want to be able to click the overlay and immediately close the menu (in the space between the actual menu and the page behind it)
         buttons.forEach(function(button){
-          button.addEventListener('click', clickOpenMenu, false); // I want to be able to click the buttons and immediately open the menu
+          button.addEventListener('click', function(event){
+            if(menu.classList.contains('menu--visible')){
+              closeMenuOverlay(event);
+            }
+            else {
+              clickOpenMenu(event);
+            }
+          }, false); // I want to be able to click the buttons and immediately open the menu
         });
     };
 

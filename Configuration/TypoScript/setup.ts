@@ -15,6 +15,20 @@ page.10 {
 	partialRootPaths {
 		10 = EXT:meinpflegeberuf/Resources/Private/Partials
 	}
+
+
+  ##########################
+  ### DATA PREPROCESSING ###
+  ##########################
+  dataProcessing {
+
+    10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+    10 {
+      levels = 2
+      as = menuMobile
+    }
+
+  }
 }
 
 page.meta {
@@ -23,6 +37,7 @@ page.meta {
 	#msvalidate\.01 = 02FC1675B548F7BD5B15EF669CF55844
 	# google site verification
 	#google-site-verification = 9x4g8j2RqMmROgs0wXzcCpTN6Qrusl9gNYabbr5sdRI
+  google-site-verification = qFkkNQk_pyPieMSQNa2YZ_hN--COpepgECZyJxUfMhc
 }
 
 # kills jquery
@@ -106,6 +121,8 @@ lib {
 		main = HMENU
 		main {
 			wrap = <ul class="navbar-nav">|</ul>
+      expAll = 1
+
 			1 = TMENU
 			1 {
 				expAll = 1
@@ -123,6 +140,7 @@ lib {
 
 			2 < .1
 			2.wrap = <ul class="subnav">|</ul>
+
 
 			3 < .2
 
@@ -178,38 +196,109 @@ lib {
 		}
 
         mobile = COA
-        mobile {
-            10 < lib.nav.main
-            10 {
-                wrap = <ul class="nav flex-column">|</ul>
+    mobile {
+      10 < lib.nav.main
+      10 {
+        wrap = <ul class="nav flex-column">|</ul>
 
-                1.NO.ATagParams = class="nav-link" rel="nofollow"
-                1.ACT.ATagParams = class="nav-link active" rel="nofollow"
-                1.CUR.ATagParams = class="nav-link active" rel="nofollow"
+        1.NO.ATagParams = class="nav-link" rel="nofollow"
+        1.ACT.ATagParams = class="nav-link active" rel="nofollow"
+        1.CUR.ATagParams = class="nav-link active" rel="nofollow"
 
-                2 < .1
-                2.wrap = <a class="btn btn-primary submenu-toggle"><i class="far fa-angle-down"></i></a><ul class="subnav">|</ul>
+        1 {
+          IFSUB < .NO
+          IFSUB {
+            stdWrap.append = COA
+            stdWrap.append {
+              10 = IMAGE
+              10.file = EXT:meinpflegeberuf/Resources/Public/Images/icons/chevron_right-24px.svg
+              10.wrap = <span class="btn submenu-toggle">|</span>
 
-                3 < .2
+              20 = COA
+              20 {
+                wrap = <ul class="subnav"><li class="nav-item back-link">|</li>
+
+                10 = IMAGE
+                10.file = EXT:meinpflegeberuf/Resources/Public/Images/icons/chevron_left-24px.svg
+                10.wrap = <span class="btn submenu-closer">|</span>
+
+                20 = TEXT
+                20.field = nav_title // title
+                20.wrap = <a href="#" class="nav-link submenu-closer" rel="nofollow">|</a>
+              }
             }
+          }
+          ACTIFSUB < .ACT
+          ACTIFSUB {
+            stdWrap.append = COA
+            stdWrap.append {
+              10 = IMAGE
+              10.file = EXT:meinpflegeberuf/Resources/Public/Images/icons/chevron_right-24px.svg
+              10.wrap = <span class="btn submenu-toggle">|</span>
 
-            # Flags
-            20 >
+              20 = COA
+              20 {
+                wrap = <ul class="subnav"><li class="nav-item back-link">|</li>
 
-            30 = CONTENT
-            30 {
-                table = tt_content
-                select {
-                    pidInList = {$meinpflegeberuf.pageIds.root}
-                    uidInList = {$meinpflegeberuf.contentIds.contact}
-                }
+                10 = IMAGE
+                10.file = EXT:meinpflegeberuf/Resources/Public/Images/icons/chevron_left-24px.svg
+                10.wrap = <span class="btn submenu-closer">|</span>
+
+                20 = TEXT
+                20.field = nav_title // title
+                20.wrap = <a href="#" class="nav-link submenu-closer" rel="nofollow">|</a>
+              }
             }
+          }
+          CURIFSUB < .CUR
+          CURIFSUB {
+            stdWrap.append = COA
+            stdWrap.append {
+              10 = IMAGE
+              10.file = EXT:meinpflegeberuf/Resources/Public/Images/icons/chevron_right-24px.svg
+              10.wrap = <span class="btn submenu-toggle">|</span>
 
-            #40 < lib.navi.socials
+              20 = COA
+              20 {
+                wrap = <ul class="subnav"><li class="nav-item back-link">|</li>
 
-            50 < lib.nav.meta
-			50.stdWrap.wrap = <nav class="frame metastellenList">|</nav>
+                10 = IMAGE
+                10.file = EXT:meinpflegeberuf/Resources/Public/Images/icons/chevron_left-24px.svg
+                10.wrap = <span class="btn submenu-closer">|</span>
+
+                20 = TEXT
+                20.field = nav_title // title
+                20.wrap = <a href="#" class="nav-link submenu-closer" rel="nofollow">|</a>
+              }
+            }
+          }
         }
+
+        2 < .1
+        2.wrap = |</ul>
+
+        3 < .2
+      }
+
+      10 >
+
+      # Flags
+      20 >
+
+      30 = CONTENT
+      30 {
+        table = tt_content
+        select {
+          pidInList = {$meinpflegeberuf.pageIds.root}
+          uidInList = {$meinpflegeberuf.contentIds.contact}
+        }
+      }
+
+      #40 < lib.navi.socials
+
+      50 < lib.nav.meta
+      50.stdWrap.wrap = <nav class="frame metastellenList">|</nav>
+    }
 
 		breadcrumb = COA
 		breadcrumb {
@@ -315,3 +404,71 @@ lib.fluidContent.settings.media.popup.linkParams.ATagParams.dataWrap = class="{$
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:meinpflegeberuf/Configuration/TypoScript/Extensions/" extension="tssetup">
 
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_grids/Configuration/TypoScript/setup.txt">
+
+
+
+// Cs seo sitemap
+// see: https://docs.typo3.org/typo3cms/extensions/cs_seo/Developer/ExtendSitemap/Index.html
+//
+
+plugin.tx_csseo.sitemap {
+  extensions {
+    gjobs {
+      table = tx_googleforjobs_domain_model_job
+      additionalParams = tx_nursing_list[controller]=Position&tx_nursing_list[action]=show&tx_nursing_list[position]
+      additionalParams = tx_googleforjobs_job[controller]=Job&tx_googleforjobs_job[action]=show&tx_googleforjobs_job[job]
+      useCacheHash = 1
+      additionalWhereClause =
+      storagePid = 156
+      recursive = 5
+      detailPid = 158
+    }
+
+    # employers {
+    # Not needed since the detail pages are usual TYPO3 pages
+    # }
+  }
+}
+
+plugin.tx_seo.config {
+  xmlSitemap {
+    sitemaps {
+      jobs {
+        provider = TYPO3\CMS\Seo\XmlSitemap\RecordsXmlSitemapDataProvider
+        config {
+          table = tx_googleforjobs_domain_model_job
+          sortField = uid
+          lastModifiedField = tstamp
+          pid = 156
+          url {
+            pageId = 158
+            fieldToParameterMap {
+              uid = tx_googleforjobs_job[job]
+            }
+            additionalGetParameters {
+              tx_googleforjobs_job.controller = Job
+              tx_googleforjobs_job.action = show
+            }
+            useCacheHash = 1
+          }
+        }
+      }
+    }
+  }
+}
+
+
+lib.googleJob = COA
+lib.googleJob {
+  10 = CONTENT
+  10 {
+    table = tx_googleforjobs_domain_model_job
+    select {
+      pidInList = 156
+      orderBy = sorting
+    }
+    renderObj = TEXT
+    renderObj.field = title
+    renderObj.wrap = <b>|</b>
+  }
+}

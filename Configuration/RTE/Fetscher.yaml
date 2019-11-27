@@ -13,7 +13,7 @@ editor:
     format_tags: "p;h1;h2;h3;h4;h5"
 
     # CSS stylesheet
-    contentsCss: ["EXT:rte_ckeditor/Resources/Public/Css/contents.css", "EXT:meinpflegeberuf/Resources/Public/Css/rte.css"]
+    contentsCss: ["EXT:rte_ckeditor/Resources/Public/Css/contents.css", "EXT:meinpflegeberuf/Resources/Public/Css/rte.css?v2"]
 
     stylesSet:
       # block level styles
@@ -46,7 +46,7 @@ editor:
     removePlugins:
       - image
     extraPlugins:
-      #- justify
+      - justify
       #- font
       #- find
       #- bidi
@@ -54,11 +54,11 @@ editor:
       #- colordialog
     colorButton_colors:
       'CF5D4E,454545,FFF,CCC,DDD,CCEAEE,66AB16'
-#    justifyClasses:
-#      - align-left
-#      - align-center
-#      - align-right
-#      - align-justify
+    justifyClasses:
+      - align-left
+      - align-center
+      - align-right
+      - align-justify
   externalPlugins:
     typo3link: { resource: "EXT:rte_ckeditor/Resources/Public/JavaScript/Plugins/typo3link.js", route: "rteckeditor_wizard_browse_links" }
 

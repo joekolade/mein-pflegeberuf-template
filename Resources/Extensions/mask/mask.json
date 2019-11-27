@@ -265,9 +265,80 @@
         }
     },
     "pages": {
-        "elements": [],
-        "sql": [],
-        "tca": []
+        "elements": {
+            "2": {
+                "label": "Standard-Seite",
+                "key": "2",
+                "shortLabel": "dummy shortitle",
+                "description": "dummy description",
+                "columns": [
+                    "tx_mask_jobtab",
+                    "tx_mask_showjobschema",
+                    "tx_mask_joboffering"
+                ],
+                "labels": [
+                    "Google Jobs",
+                    "Job Metadata",
+                    "Job"
+                ]
+            }
+        },
+        "sql": {
+            "tx_mask_joboffering": {
+                "pages": {
+                    "tx_mask_joboffering": "tinytext"
+                }
+            },
+            "tx_mask_showjobschema": {
+                "pages": {
+                    "tx_mask_showjobschema": "int(11) DEFAULT '0' NOT NULL"
+                }
+            }
+        },
+        "tca": {
+            "tx_mask_jobtab": {
+                "config": {
+                    "type": "tab"
+                },
+                "key": "jobtab"
+            },
+            "tx_mask_showjobschema": {
+              "config": {
+                "type": "check",
+                "items": [
+                  [
+                    "anzeigen",
+                    "1"
+                  ]
+                ],
+                "cols": "",
+                "default": ""
+              },
+              "exclude": "1",
+              "key": "showjobschema"
+            },
+            "tx_mask_joboffering": {
+                "config": {
+                    "type": "select",
+                    "renderType": "selectSingle",
+                    "size": "",
+                    "items": [
+                        [
+                            ""
+                        ]
+                    ],
+                    "foreign_table": "tx_googleforjobs_domain_model_job",
+                    "foreign_table_where": "AND tx_googleforjobs_domain_model_job.pid = 156 AND tx_googleforjobs_domain_model_job.hidden = 0",
+                    "fileFolder": "",
+                    "fileFolder_extList": "",
+                    "fileFolder_recursions": "",
+                    "maxitems": "1",
+                    "autoSizeMax": ""
+                },
+                "exclude": "1",
+                "key": "joboffering"
+            }
+        }
     },
     "sys_file_reference": {
         "sql": []

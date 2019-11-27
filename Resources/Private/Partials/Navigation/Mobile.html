@@ -1,17 +1,69 @@
+<f:if condition="{menuMobile}">
+  <div class="mobile-menu">
+    <div class="menu-background" style="cursor: pointer;"></div>
+    <div class="app-menu-container">
+      <div class="app-menu">
+        <div class="top">
+
+          <f:render partial="Logo" arguments="{_all}"></f:render>
+
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
+            <f:image src="EXT:meinpflegeberuf/Resources/Public/Images/icons/close-24px.svg" alt="schließe Navigation"></f:image>
+          </button>
+        </div>
+        <div class="bottom">
+          <ul class="nav flex-column">
+            <f:for each="{menuMobile}" as="mainItem">
+              <li class="nav-item">
+                <f:render partial="Navigation/Elements/Item" arguments="{item: mainItem, hasChildren: mainItem.children}"/>
+                <f:if condition="{mainItem.children}">
+                  <f:render section="submenu" arguments="{mainItem: mainItem, submenu: mainItem.children}"/>
+                </f:if>
+              </li>
+            </f:for>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</f:if>
+
+
+<f:section name="submenu">
+
+  <ul class="subnav">
+    <li class="nav-item back-link">
+      <span class="btn submenu-closer">
+        <f:image src="EXT:meinpflegeberuf/Resources/Public/Images/icons/chevron_left-24px.svg"></f:image>
+      </span>
+      <a href="#" class="nav-link submenu-closer" rel="nofollow">{mainItem.title}</a>
+    </li>
+
+    <f:for each="{submenu}" as="subItem">
+      <f:render partial="Navigation/Elements/Item" arguments="{item: subItem, hasChildren: 0}"/>
+    </f:for>
+  </ul>
+</f:section>
+
+
+<f:comment>
 <div class="mobile-menu">
-	<div class="menu-background" style="cursor: pointer;"></div>
-	<div class="app-menu-container">
-		<div class="app-menu">
-			<div class="top">
+  <div class="menu-background" style="cursor: pointer;"></div>
+  <div class="app-menu-container">
+    <div class="app-menu">
+      <div class="top">
 
-				<f:render partial="Logo" arguments="{_all}"></f:render>
+        <f:render partial="Logo" arguments="{_all}"></f:render>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
+          <f:image src="EXT:meinpflegeberuf/Resources/Public/Images/icons/close-24px.svg" alt="schließe Navigation"></f:image>
+        </button>
+      </div>
+      <div class="bottom">
 
-			</div>
-			<div class="bottom">
+        <f:cObject typoscriptObjectPath="lib.nav.mobile"></f:cObject>
 
-				<f:cObject typoscriptObjectPath="lib.nav.mobile"></f:cObject>
-
-			</div>
-		</div>
-	</div>
+      </div>
+    </div>
+  </div>
 </div>
+</f:comment>

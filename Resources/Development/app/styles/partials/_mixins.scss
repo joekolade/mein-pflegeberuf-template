@@ -1,18 +1,17 @@
-
 // MIXINS
 //
-@mixin naviLinks($color: $body-color){
+@mixin naviLinks($color: $body-color) {
   a {
-	color: $color;
+    color: $color;
 
-	&.active {
-	  //color: darken($link-color, 20%);
-	}
+    &.active {
+      //color: darken($link-color, 20%);
+    }
 
-	&.active,
-	&:hover {
-	  color: $link-color;
-	  text-decoration: none;
-	}
+    &.active,
+    &:hover {
+      color: $link-color;
+      text-decoration: none;
+    }
   }
 }

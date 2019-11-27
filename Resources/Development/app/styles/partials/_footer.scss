@@ -1,28 +1,27 @@
-
 // Footer
 //
 
 
 $footer-bg: #F2F1EE;
 
-footer {
-
-  > .footer {
-
+.wrapper > footer {
   background: $footer-bg;
-  padding: 2rem $grid-gutter-width/2;
-  //font-size: .8em;
+
+  .footer {
+
+    padding: 2rem $grid-gutter-width/2;
+    //font-size: .8em;
   }
 
   margin-left: 0;
   margin-right: 0;
 
   h3 {
-	font-size: 1.4285714286 * $font-size-base; // 20px
+    font-size: 1.4285714286 * $font-size-base; // 20px
   }
 
   ul {
-	list-style: none;
-	padding-left: 0;
+    list-style: none;
+    padding-left: 0;
   }
 }

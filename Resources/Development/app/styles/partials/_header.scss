@@ -7,7 +7,7 @@ $flag-width: 25px;
 header.container {
   font-size: $header-fsize;
 
-  padding: $grid-gutter-width/3 $grid-gutter-width/2;
+  padding: $grid-gutter-width $grid-gutter-width/2;
 
   // Layout via grid
 

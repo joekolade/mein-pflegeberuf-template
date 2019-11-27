@@ -1,3 +1,4 @@
+{namespace germanjob=Joekolade\Meinpflegeberuf\ViewHelpers}
 <f:layout name="Default"></f:layout>
 
 <f:section name="stage">
@@ -14,4 +15,9 @@
 
 	</div>
 
+  <f:if condition="{data.tx_mask_showjobschema}">
+    <f:format.raw>
+      <germanjob:googlejob job="{data.tx_mask_joboffering}"></germanjob:googlejob>
+    </f:format.raw>
+  </f:if>
 </f:section>
